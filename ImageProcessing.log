@@ -1,0 +1,36 @@
+2024-08-25 22:04:40,085 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:04:40,085 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:04:40,459 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.130:5000
+2024-08-25 22:04:40,459 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-25 22:05:14,564 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:05:14,564 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:05:14,768 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:05:14,769 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:05:14,817 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:05:14,817 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:05:14,888 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:05:14,888 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:05:14,900 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:05:14,900 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:05:14,938 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:05:14,938 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:05:14,942 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:05:14,942 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:05:15,006 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:05:15,006 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:05:23,514 - ERROR - No known encodings found. Encoding new face. UID: shaganan
+2024-08-25 22:05:24,340 - ERROR - No known encodings found. Encoding new face. UID: shaganan
+2024-08-25 22:05:26,064 - ERROR - No known encodings found. Encoding new face. UID: shaganan
+2024-08-25 22:05:27,624 - ERROR - No known encodings found. Encoding new face. UID: jana
+2024-08-25 22:05:28,487 - ERROR - No known encodings found. Encoding new face. UID: jana
+2024-08-25 22:05:29,051 - ERROR - No known encodings found. Encoding new face. UID: shaganan
+2024-08-25 22:05:30,486 - ERROR - No known encodings found. Encoding new face. UID: jana
+2024-08-25 22:05:31,745 - ERROR - No known encodings found. Encoding new face. UID: shaganan
+2024-08-25 22:05:32,558 - ERROR - No known encodings found. Encoding new face. UID: shaganan
+2024-08-25 22:05:33,619 - ERROR - No known encodings found. Encoding new face. UID: jana
+2024-08-25 22:05:35,062 - ERROR - No known encodings found. Encoding new face. UID: jana
+2024-08-25 22:05:37,618 - ERROR - No known encodings found. Encoding new face. UID: shaganan
+2024-08-25 22:05:38,891 - ERROR - No known encodings found. Encoding new face. UID: jana

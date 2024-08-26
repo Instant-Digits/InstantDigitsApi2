@@ -1,0 +1,20 @@
+[2024-08-25 22:05:12 -0400] [58577] [INFO] Starting gunicorn 23.0.0
+[2024-08-25 22:05:12 -0400] [58577] [INFO] Listening at: http://0.0.0.0:8000 (58577)
+[2024-08-25 22:05:12 -0400] [58577] [INFO] Using worker: sync
+[2024-08-25 22:05:12 -0400] [58578] [INFO] Booting worker with pid: 58578
+[2024-08-25 22:05:12 -0400] [58586] [INFO] Booting worker with pid: 58586
+[2024-08-25 22:05:12 -0400] [58587] [INFO] Booting worker with pid: 58587
+[2024-08-25 22:05:12 -0400] [58595] [INFO] Booting worker with pid: 58595
+[2024-08-25 22:05:12 -0400] [58603] [INFO] Booting worker with pid: 58603
+[2024-08-25 22:05:12 -0400] [58604] [INFO] Booting worker with pid: 58604
+[2024-08-25 22:05:12 -0400] [58605] [INFO] Booting worker with pid: 58605
+[2024-08-25 22:05:12 -0400] [58606] [INFO] Booting worker with pid: 58606
+[2024-08-25 22:17:43 -0400] [58577] [INFO] Handling signal: int
+[2024-08-25 22:17:44 -0400] [58595] [INFO] Worker exiting (pid: 58595)
+[2024-08-25 22:17:44 -0400] [58587] [INFO] Worker exiting (pid: 58587)
+[2024-08-25 22:17:44 -0400] [58603] [INFO] Worker exiting (pid: 58603)
+[2024-08-25 22:17:44 -0400] [58578] [INFO] Worker exiting (pid: 58578)
+[2024-08-25 22:17:44 -0400] [58586] [INFO] Worker exiting (pid: 58586)
+[2024-08-25 22:17:44 -0400] [58604] [INFO] Worker exiting (pid: 58604)
+[2024-08-25 22:17:44 -0400] [58606] [INFO] Worker exiting (pid: 58606)
+[2024-08-25 22:17:44 -0400] [58605] [INFO] Worker exiting (pid: 58605)

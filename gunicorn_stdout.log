@@ -1,0 +1,40 @@
+Encodings file not found. Creating a new one at encodings.pkl.
+{'status': False, 'mes': 'The faces did not match'}
+{'status': False, 'mes': 'The faces did not match'}
+{'status': False, 'mes': 'The faces did not match'}
+Encodings file not found. Creating a new one at encodings.pkl.
+{'status': False, 'mes': 'The faces did not match'}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 71}
+Encodings file not found. Creating a new one at encodings.pkl.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 93}
+{'status': False, 'mes': 'The faces did not match'}
+{'status': False, 'mes': 'The faces did not match'}
+{'status': False, 'mes': 'The faces did not match'}
+{'status': False, 'mes': 'The faces did not match'}
+Encodings file not found. Creating a new one at encodings.pkl.
+{'status': False, 'mes': 'More than one face detected, please try again!'}
+{'status': False, 'mes': 'More than one face detected, please try again!'}
+{'status': False, 'mes': 'The face was not detected, please try again!'}
+{'status': False, 'mes': 'The faces did not match'}
+{'status': False, 'mes': 'The faces did not match'}
+Encodings file not found. Creating a new one at encodings.pkl.
+{'status': False, 'mes': 'The faces did not match'}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 51}
+{'status': False, 'mes': 'The face was not detected, please try again!'}
+{'status': False, 'mes': 'The faces did not match'}
+Encodings file not found. Creating a new one at encodings.pkl.
+{'status': False, 'mes': 'More than one face detected, please try again!'}
+{'status': False, 'mes': 'The face was not detected, please try again!'}
+{'status': False, 'mes': 'The faces did not match'}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 100}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 100}
+{'status': False, 'mes': 'The face was not detected, please try again!'}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 94}
+{'status': False, 'mes': 'The faces did not match'}
+Encodings file not found. Creating a new one at encodings.pkl.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 75}
+{'status': False, 'mes': 'The faces did not match'}
+Encodings file not found. Creating a new one at encodings.pkl.
+{'status': False, 'mes': 'More than one face detected, please try again!'}
+{'status': False, 'mes': 'The faces did not match'}
+{'status': False, 'mes': 'The faces did not match'}
