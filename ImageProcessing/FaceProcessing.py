@@ -1,11 +1,10 @@
-import cv2
+import cv2, numpy as np
 import face_recognition
 from base64 import decodebytes
 import base64
 import io
 from PIL import Image
 import os
-from .Encording import loadEncodings, saveEncodings
 import logging
 
 logging.basicConfig(
@@ -13,12 +12,7 @@ logging.basicConfig(
     level=logging.ERROR,  # Minimum level of severity to log
     format='%(asctime)s - %(levelname)s - %(message)s'  # Log format
 )
-
 logger = logging.getLogger()
-
-encodingsFile='encodings.pkl'
-
-encodingsDict = loadEncodings(encodingsFile)
 
 def NoofFaces(image_path):
     image = cv2.imread(image_path)
@@ -67,8 +61,7 @@ def AnomalyDetections(faceLocation, imgFile): #mobile phone photo dection
     return False #anaomaly not detected
 
 def compareFaces(knownImagePath, unknownImagePath, uid,  threshold=48):
-    global encodingsDict ,encodingsFile
-    knownEncodings = encodingsDict.get(uid, [])
+    knownEncodings = []
     if len(knownEncodings) == 0:
         logging.error('No known encodings found. Encoding new face. uid ' + uid)
         try:
@@ -79,8 +72,8 @@ def compareFaces(knownImagePath, unknownImagePath, uid,  threshold=48):
 
             # Add the new encoding to the list of known encodings for the UID
             knownEncodings.append(knownImageEncodings[0])
-            encodingsDict[uid] = knownEncodings
-            saveEncodings(encodingsFile, encodingsDict)
+           
+            
         except Exception as e:
             logging.error(f"Error Code FP#1: {e} for {uid}")
             return {'status':False, 'mes':'Error Code FP#1' }
@@ -103,9 +96,7 @@ def compareFaces(knownImagePath, unknownImagePath, uid,  threshold=48):
         if any(match):
             distance = face_recognition.face_distance(knownEncodings, unknownEncoding)
             accuracy = round(100 - (min(distance) * 100))
-            if threshold < accuracy < 95:
-                encodingsDict[uid].append(unknownEncoding)
-                saveEncodings(encodingsFile, encodingsDict)
+           
 
             return {'status':True, 'mes':'The Faces Matched', 'accuracy':accuracy }
         
@@ -151,12 +142,12 @@ def decodeBase64ImageResize(base64_string, max_size=(800, 800) ):
         raise
 
 
-def compareFacesBase64(knownImageBase64, unknownImageBase64, uid, threshold=48):
-    global encodingsDict ,encodingsFile
-    knownEncodings = encodingsDict.get(uid, [])
+def compareFacesBase64(knownImageBase64, unknownImageBase64, uid, dbOperations=False):    
+    knownEncodings = dbOperations.getADoc({'collectionID':'EncodedFaces','documentID':uid}) if (dbOperations) else {'status':False}
+    knownEncodings = [np.array(encode) for encode in knownEncodings['data']['encodes']] if knownEncodings['status'] else []
 
     if len(knownEncodings) == 0:
-        logging.error(f'No known encodings found. Encoding new face. UID: {uid}')
+        print(f'No known encodings found. Encoding new face. UID: {uid}')
         try:
             # Decode base64 string and convert to a file-like object
             known_image_file = decodeBase64Image(knownImageBase64)
@@ -170,10 +161,12 @@ def compareFacesBase64(knownImageBase64, unknownImageBase64, uid, threshold=48):
 
             # Add the new encoding to the list of known encodings for the UID
             knownEncodings.append(knownImageEncodings[0])
-            encodingsDict[uid] = knownEncodings
-            saveEncodings(encodingsFile, encodingsDict)
+            # if(dbOperations):
+            #     dbOperations.updateDoc({'collectionID':'EncodedFaces','documentID':uid, 'data':{'encodes':[encode.tolist() for encode in knownEncodings]}})
+
+            
         except Exception as e:
-            logging.error(f"Error Code FP#1: {e} for {uid}")
+            print(f"Error Code FP#1: {e} for {uid}")
             return {'status': False, 'mes': 'Error Code FP#1'}
 
     try:
@@ -196,9 +189,10 @@ def compareFacesBase64(knownImageBase64, unknownImageBase64, uid, threshold=48):
         if any(match):
             distance = face_recognition.face_distance(knownEncodings, unknownEncoding)
             accuracy = round(100 - (min(distance) * 100))
-            if threshold < accuracy < 95:
-                encodingsDict[uid].append(unknownEncoding)
-                saveEncodings(encodingsFile, encodingsDict)
+            if 48 < accuracy < 80 and dbOperations:
+                knownEncodings.append(unknownEncoding)
+                dbOperations.updateDoc({'collectionID':'EncodedFaces','documentID':uid, 'data':{'encodes':[encode.tolist() for encode in knownEncodings]}})
+               
 
             return {'status': True, 'mes': 'The faces matched', 'accuracy': accuracy}
 
