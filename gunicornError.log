@@ -18,3 +18,152 @@
 [2024-08-25 22:17:44 -0400] [58604] [INFO] Worker exiting (pid: 58604)
 [2024-08-25 22:17:44 -0400] [58606] [INFO] Worker exiting (pid: 58606)
 [2024-08-25 22:17:44 -0400] [58605] [INFO] Worker exiting (pid: 58605)
+[2024-08-25 22:18:14 -0400] [61058] [INFO] Starting gunicorn 23.0.0
+[2024-08-25 22:18:14 -0400] [61058] [INFO] Listening at: http://0.0.0.0:8000 (61058)
+[2024-08-25 22:18:14 -0400] [61058] [INFO] Using worker: sync
+[2024-08-25 22:18:14 -0400] [61060] [INFO] Booting worker with pid: 61060
+[2024-08-25 22:18:14 -0400] [61068] [INFO] Booting worker with pid: 61068
+[2024-08-25 22:18:14 -0400] [61069] [INFO] Booting worker with pid: 61069
+[2024-08-25 22:18:14 -0400] [61070] [INFO] Booting worker with pid: 61070
+[2024-08-25 22:18:14 -0400] [61071] [INFO] Booting worker with pid: 61071
+[2024-08-25 22:18:14 -0400] [61079] [INFO] Booting worker with pid: 61079
+[2024-08-25 22:18:14 -0400] [61101] [INFO] Booting worker with pid: 61101
+[2024-08-25 22:18:14 -0400] [61102] [INFO] Booting worker with pid: 61102
+[2024-08-25 22:23:23 -0400] [61058] [INFO] Handling signal: winch
+[2024-08-25 22:24:37 -0400] [61058] [INFO] Handling signal: int
+[2024-08-25 22:24:37 -0400] [61071] [INFO] Worker exiting (pid: 61071)
+[2024-08-25 22:24:37 -0400] [61102] [INFO] Worker exiting (pid: 61102)
+[2024-08-25 22:24:37 -0400] [61070] [INFO] Worker exiting (pid: 61070)
+[2024-08-25 22:24:37 -0400] [61060] [INFO] Worker exiting (pid: 61060)
+[2024-08-25 22:24:37 -0400] [61068] [INFO] Worker exiting (pid: 61068)
+[2024-08-25 22:24:37 -0400] [61069] [INFO] Worker exiting (pid: 61069)
+[2024-08-25 22:24:37 -0400] [61101] [INFO] Worker exiting (pid: 61101)
+[2024-08-25 22:24:37 -0400] [61079] [INFO] Worker exiting (pid: 61079)
+[2024-08-25 22:25:39 -0400] [64004] [INFO] Starting gunicorn 23.0.0
+[2024-08-25 22:25:39 -0400] [64004] [INFO] Listening at: http://0.0.0.0:8000 (64004)
+[2024-08-25 22:25:39 -0400] [64004] [INFO] Using worker: sync
+[2024-08-25 22:25:39 -0400] [64005] [INFO] Booting worker with pid: 64005
+[2024-08-25 22:25:39 -0400] [64006] [INFO] Booting worker with pid: 64006
+[2024-08-25 22:25:39 -0400] [64007] [INFO] Booting worker with pid: 64007
+[2024-08-25 22:25:39 -0400] [64029] [INFO] Booting worker with pid: 64029
+[2024-08-25 22:25:39 -0400] [64037] [INFO] Booting worker with pid: 64037
+[2024-08-25 22:25:39 -0400] [64038] [INFO] Booting worker with pid: 64038
+[2024-08-25 22:25:39 -0400] [64039] [INFO] Booting worker with pid: 64039
+[2024-08-25 22:25:39 -0400] [64040] [INFO] Booting worker with pid: 64040
+[2024-08-26 10:14:27 -0400] [64004] [CRITICAL] WORKER TIMEOUT (pid:64005)
+[2024-08-26 10:14:27 -0400] [64005] [ERROR] Error handling request /FaceCompareBase64
+Traceback (most recent call last):
+  File "/home/shaganan/server/InstantDigitsApi2/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/shaganan/server/InstantDigitsApi2/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shaganan/server/InstantDigitsApi2/venv/lib/python3.12/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shaganan/server/InstantDigitsApi2/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shaganan/server/InstantDigitsApi2/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shaganan/server/InstantDigitsApi2/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shaganan/server/InstantDigitsApi2/app.py", line 21, in faceCompareBase64
+    data=request.get_json()
+         ^^^^^^^^^^^^^^^^^^
+  File "/home/shaganan/server/InstantDigitsApi2/venv/lib/python3.12/site-packages/werkzeug/wrappers/request.py", line 605, in get_json
+    data = self.get_data(cache=cache)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shaganan/server/InstantDigitsApi2/venv/lib/python3.12/site-packages/werkzeug/wrappers/request.py", line 419, in get_data
+    rv = self.stream.read()
+         ^^^^^^^^^^^^^^^^^^
+  File "/home/shaganan/server/InstantDigitsApi2/venv/lib/python3.12/site-packages/gunicorn/http/body.py", line 221, in read
+    data = self.reader.read(1024)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shaganan/server/InstantDigitsApi2/venv/lib/python3.12/site-packages/gunicorn/http/body.py", line 131, in read
+    data = self.unreader.read()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/shaganan/server/InstantDigitsApi2/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/shaganan/server/InstantDigitsApi2/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shaganan/server/InstantDigitsApi2/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-08-26 10:14:27 -0400] [64005] [INFO] Worker exiting (pid: 64005)
+[2024-08-26 10:14:27 -0400] [388725] [INFO] Booting worker with pid: 388725
+[2024-09-01 07:56:16 -0400] [64004] [INFO] Handling signal: int
+[2024-09-01 07:56:16 -0400] [64006] [INFO] Worker exiting (pid: 64006)
+[2024-09-01 07:56:16 -0400] [64038] [INFO] Worker exiting (pid: 64038)
+[2024-09-01 07:56:16 -0400] [64029] [INFO] Worker exiting (pid: 64029)
+[2024-09-01 07:56:16 -0400] [64037] [INFO] Worker exiting (pid: 64037)
+[2024-09-01 07:56:16 -0400] [64007] [INFO] Worker exiting (pid: 64007)
+[2024-09-01 07:56:16 -0400] [388725] [INFO] Worker exiting (pid: 388725)
+[2024-09-01 07:56:16 -0400] [64039] [INFO] Worker exiting (pid: 64039)
+[2024-09-01 07:56:16 -0400] [64040] [INFO] Worker exiting (pid: 64040)
+[2024-09-02 01:27:24 -0400] [6813] [INFO] Starting gunicorn 23.0.0
+[2024-09-02 01:27:24 -0400] [6813] [INFO] Listening at: http://0.0.0.0:8000 (6813)
+[2024-09-02 01:27:24 -0400] [6813] [INFO] Using worker: sync
+[2024-09-02 01:27:24 -0400] [6815] [INFO] Booting worker with pid: 6815
+[2024-09-02 01:27:24 -0400] [6816] [INFO] Booting worker with pid: 6816
+[2024-09-02 01:27:24 -0400] [6824] [INFO] Booting worker with pid: 6824
+[2024-09-02 01:27:24 -0400] [6832] [INFO] Booting worker with pid: 6832
+[2024-09-02 01:27:24 -0400] [6833] [INFO] Booting worker with pid: 6833
+[2024-09-02 01:27:24 -0400] [6841] [INFO] Booting worker with pid: 6841
+[2024-09-02 01:27:24 -0400] [6856] [INFO] Booting worker with pid: 6856
+[2024-09-02 01:27:24 -0400] [6857] [INFO] Booting worker with pid: 6857
+[2024-09-02 11:14:28 -0400] [6813] [INFO] Handling signal: hup
+[2024-09-02 11:14:28 -0400] [6813] [INFO] Hang up: Master
+[2024-09-02 11:14:29 -0400] [20268] [INFO] Booting worker with pid: 20268
+[2024-09-02 11:14:29 -0400] [20272] [INFO] Booting worker with pid: 20272
+[2024-09-02 11:14:29 -0400] [20277] [INFO] Booting worker with pid: 20277
+[2024-09-02 11:14:29 -0400] [20283] [INFO] Booting worker with pid: 20283
+[2024-09-02 11:14:29 -0400] [20288] [INFO] Booting worker with pid: 20288
+[2024-09-02 11:14:29 -0400] [20290] [INFO] Booting worker with pid: 20290
+[2024-09-02 11:14:29 -0400] [6813] [INFO] Handling signal: hup
+[2024-09-02 11:14:29 -0400] [6813] [INFO] Hang up: Master
+[2024-09-02 11:14:29 -0400] [20316] [INFO] Booting worker with pid: 20316
+[2024-09-02 11:14:29 -0400] [20317] [INFO] Booting worker with pid: 20317
+[2024-09-02 11:14:29 -0400] [20346] [INFO] Booting worker with pid: 20346
+[2024-09-02 11:14:29 -0400] [20352] [INFO] Booting worker with pid: 20352
+[2024-09-02 11:14:29 -0400] [20348] [INFO] Booting worker with pid: 20348
+[2024-09-02 11:14:29 -0400] [20353] [INFO] Booting worker with pid: 20353
+[2024-09-02 11:14:29 -0400] [20357] [INFO] Booting worker with pid: 20357
+[2024-09-02 11:14:29 -0400] [20367] [INFO] Booting worker with pid: 20367
+[2024-09-02 11:14:29 -0400] [20372] [INFO] Booting worker with pid: 20372
+[2024-09-02 11:14:29 -0400] [20380] [INFO] Booting worker with pid: 20380
+[2024-09-02 11:24:25 -0400] [2708] [INFO] Starting gunicorn 23.0.0
+[2024-09-02 11:24:25 -0400] [2708] [INFO] Listening at: http://0.0.0.0:8000 (2708)
+[2024-09-02 11:24:25 -0400] [2708] [INFO] Using worker: sync
+[2024-09-02 11:24:25 -0400] [2710] [INFO] Booting worker with pid: 2710
+[2024-09-02 11:24:25 -0400] [2711] [INFO] Booting worker with pid: 2711
+[2024-09-02 11:24:25 -0400] [2712] [INFO] Booting worker with pid: 2712
+[2024-09-02 11:24:25 -0400] [2713] [INFO] Booting worker with pid: 2713
+[2024-09-02 11:24:25 -0400] [2714] [INFO] Booting worker with pid: 2714
+[2024-09-02 11:24:25 -0400] [2743] [INFO] Booting worker with pid: 2743
+[2024-09-02 11:24:25 -0400] [2744] [INFO] Booting worker with pid: 2744
+[2024-09-02 11:24:25 -0400] [2745] [INFO] Booting worker with pid: 2745
+[2024-09-02 14:11:37 -0400] [2708] [INFO] Handling signal: int
+[2024-09-02 14:11:37 -0400] [2711] [INFO] Worker exiting (pid: 2711)
+[2024-09-02 14:11:37 -0400] [2713] [INFO] Worker exiting (pid: 2713)
+[2024-09-02 14:11:37 -0400] [2712] [INFO] Worker exiting (pid: 2712)
+[2024-09-02 14:11:37 -0400] [2744] [INFO] Worker exiting (pid: 2744)
+[2024-09-02 14:11:37 -0400] [2714] [INFO] Worker exiting (pid: 2714)
+[2024-09-02 14:11:37 -0400] [2745] [INFO] Worker exiting (pid: 2745)
+[2024-09-02 14:11:37 -0400] [2743] [INFO] Worker exiting (pid: 2743)
+[2024-09-02 14:11:37 -0400] [2710] [INFO] Worker exiting (pid: 2710)
+[2024-09-02 14:11:41 -0400] [19847] [INFO] Starting gunicorn 23.0.0
+[2024-09-02 14:11:41 -0400] [19847] [INFO] Listening at: http://0.0.0.0:8000 (19847)
+[2024-09-02 14:11:41 -0400] [19847] [INFO] Using worker: sync
+[2024-09-02 14:11:41 -0400] [19848] [INFO] Booting worker with pid: 19848
+[2024-09-02 14:11:41 -0400] [19849] [INFO] Booting worker with pid: 19849
+[2024-09-02 14:11:41 -0400] [19864] [INFO] Booting worker with pid: 19864
+[2024-09-02 14:11:41 -0400] [19865] [INFO] Booting worker with pid: 19865
+[2024-09-02 14:11:41 -0400] [19866] [INFO] Booting worker with pid: 19866
+[2024-09-02 14:11:41 -0400] [19874] [INFO] Booting worker with pid: 19874
+[2024-09-02 14:11:42 -0400] [19875] [INFO] Booting worker with pid: 19875
+[2024-09-02 14:11:42 -0400] [19883] [INFO] Booting worker with pid: 19883

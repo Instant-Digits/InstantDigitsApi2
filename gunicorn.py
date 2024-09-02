@@ -3,8 +3,6 @@ import subprocess
 import sys
 from pyngrok import ngrok
 
-import time
-
 def start_gunicorn():
     try:
         # Define the Gunicorn command

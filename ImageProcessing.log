@@ -34,3 +34,253 @@
 2024-08-25 22:05:35,062 - ERROR - No known encodings found. Encoding new face. UID: jana
 2024-08-25 22:05:37,618 - ERROR - No known encodings found. Encoding new face. UID: shaganan
 2024-08-25 22:05:38,891 - ERROR - No known encodings found. Encoding new face. UID: jana
+2024-08-25 22:18:16,208 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:18:16,209 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:18:16,289 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:18:16,290 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:18:16,321 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:18:16,321 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:18:16,364 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:18:16,364 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:18:16,377 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:18:16,377 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:18:16,379 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:18:16,379 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:18:16,418 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:18:16,418 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:18:16,433 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:18:16,433 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:19:31,798 - ERROR - No known encodings found. Encoding new face. UID: shaganan
+2024-08-25 22:19:32,837 - ERROR - No known encodings found. Encoding new face. UID: shaganan
+2024-08-25 22:19:33,738 - ERROR - No known encodings found. Encoding new face. UID: shaganan
+2024-08-25 22:19:34,776 - ERROR - No known encodings found. Encoding new face. UID: shaganan
+2024-08-25 22:19:36,064 - ERROR - No known encodings found. Encoding new face. UID: shaganan
+2024-08-25 22:19:39,176 - ERROR - No known encodings found. Encoding new face. UID: shaganan
+2024-08-25 22:19:40,983 - ERROR - No known encodings found. Encoding new face. UID: shaganan
+2024-08-25 22:19:42,733 - ERROR - No known encodings found. Encoding new face. UID: shaganan
+2024-08-25 22:20:02,432 - ERROR - No known encodings found. Encoding new face. UID: chippy
+2024-08-25 22:20:03,724 - ERROR - No known encodings found. Encoding new face. UID: chippy
+2024-08-25 22:20:07,665 - ERROR - No known encodings found. Encoding new face. UID: chippy
+2024-08-25 22:20:11,035 - ERROR - No known encodings found. Encoding new face. UID: chippy
+2024-08-25 22:20:15,191 - ERROR - No known encodings found. Encoding new face. UID: chippy
+2024-08-25 22:20:17,701 - ERROR - No known encodings found. Encoding new face. UID: chippy
+2024-08-25 22:20:19,047 - ERROR - No known encodings found. Encoding new face. UID: chippy
+2024-08-25 22:21:35,351 - ERROR - No known encodings found. Encoding new face. UID: chippy
+2024-08-25 22:25:41,084 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:25:41,084 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:25:41,100 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:25:41,100 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:25:41,120 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:25:41,120 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:25:41,186 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:25:41,187 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:25:41,249 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:25:41,249 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:25:41,254 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:25:41,254 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:25:41,300 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:25:41,300 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:25:41,321 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-25 22:25:41,322 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-26 10:14:28,223 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-26 10:14:28,225 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-08-26 13:57:10,169 - ERROR - No known encodings found. Encoding new face. UID: USER20231228104528517
+2024-08-26 14:31:23,149 - ERROR - No known encodings found. Encoding new face. UID: USER20231228104528517
+2024-08-26 14:31:55,765 - ERROR - No known encodings found. Encoding new face. UID: USER20231228104528517
+2024-08-26 19:15:04,530 - ERROR - No known encodings found. Encoding new face. UID: USER20231228104528517
+2024-08-26 19:17:10,666 - ERROR - No known encodings found. Encoding new face. UID: USER20231228104528517
+2024-08-26 19:17:25,666 - ERROR - No known encodings found. Encoding new face. UID: USER20231228104528517
+2024-08-26 19:22:59,206 - ERROR - No known encodings found. Encoding new face. UID: USER20231228104528517
+2024-08-26 20:03:32,395 - ERROR - No known encodings found. Encoding new face. UID: USER20231228104528517
+2024-08-26 20:06:31,923 - ERROR - No known encodings found. Encoding new face. UID: USER20231228104528517
+2024-08-26 20:14:37,976 - ERROR - No known encodings found. Encoding new face. UID: USER20231228104528517
+2024-08-26 20:17:38,959 - ERROR - No known encodings found. Encoding new face. UID: USER20231228104528517
+2024-08-26 20:49:29,299 - ERROR - Exception on /FaceCompareBase64 [POST]
+Traceback (most recent call last):
+  File "/home/shaganan/server/InstantDigitsApi2/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shaganan/server/InstantDigitsApi2/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shaganan/server/InstantDigitsApi2/venv/lib/python3.12/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/shaganan/server/InstantDigitsApi2/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shaganan/server/InstantDigitsApi2/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shaganan/server/InstantDigitsApi2/app.py", line 24, in faceCompareBase64
+    uid = data['uid']
+          ~~~~^^^^^^^
+KeyError: 'uid'
+2024-08-26 21:09:28,131 - ERROR - No known encodings found. Encoding new face. UID: USER20240127104934590
+2024-08-26 21:09:38,573 - ERROR - No known encodings found. Encoding new face. UID: USER20240127104934590
+2024-08-26 21:10:03,952 - ERROR - No known encodings found. Encoding new face. UID: USER20240127104934590
+2024-08-26 21:10:57,677 - ERROR - No known encodings found. Encoding new face. UID: USER20240127104934590
+2024-08-26 21:27:33,704 - ERROR - No known encodings found. Encoding new face. UID: USER20240127104934590
+2024-08-26 21:29:50,524 - ERROR - No known encodings found. Encoding new face. UID: USER20240127104934590
+2024-08-26 21:41:23,038 - ERROR - No known encodings found. Encoding new face. UID: USER20240127104934590
+2024-08-27 10:23:09,396 - ERROR - No known encodings found. Encoding new face. UID: USER20240127104934590
+2024-08-27 22:54:58,941 - ERROR - No known encodings found. Encoding new face. UID: USER20240808145228297
+2024-08-27 22:55:03,982 - ERROR - No known encodings found. Encoding new face. UID: USER20240808145228297
+2024-08-28 06:26:25,220 - ERROR - No known encodings found. Encoding new face. UID: USER20240809125952371
+2024-08-28 06:52:06,231 - ERROR - No known encodings found. Encoding new face. UID: USER20240607081757383
+2024-08-28 06:55:28,651 - ERROR - No known encodings found. Encoding new face. UID: USER20240808145228297
+2024-08-28 07:46:30,864 - ERROR - No known encodings found. Encoding new face. UID: USER20240111121909629
+2024-08-28 07:58:40,113 - ERROR - No known encodings found. Encoding new face. UID: USER20240531125920839
+2024-08-28 11:10:28,879 - ERROR - No known encodings found. Encoding new face. UID: USER20240607081757383
+2024-08-28 14:30:18,521 - ERROR - No known encodings found. Encoding new face. UID: USER20240809125952371
+2024-08-28 14:47:13,216 - ERROR - No known encodings found. Encoding new face. UID: USER20240111121909629
+2024-08-28 16:00:38,249 - ERROR - No known encodings found. Encoding new face. UID: USER20240531125920839
+2024-08-29 06:24:54,898 - ERROR - No known encodings found. Encoding new face. UID: USER20240809125952371
+2024-08-29 06:49:23,592 - ERROR - No known encodings found. Encoding new face. UID: USER20240106121142915
+2024-08-29 06:56:36,323 - ERROR - No known encodings found. Encoding new face. UID: USER20240808145228297
+2024-08-29 06:58:27,943 - ERROR - No known encodings found. Encoding new face. UID: USER20240212105311349
+2024-08-29 07:03:36,345 - ERROR - No known encodings found. Encoding new face. UID: USER20240201152908592
+2024-08-29 07:31:26,376 - ERROR - No known encodings found. Encoding new face. UID: USER20240611110230162
+2024-08-29 07:32:48,397 - ERROR - No known encodings found. Encoding new face. UID: USER20240611110230162
+2024-08-29 07:33:06,950 - ERROR - No known encodings found. Encoding new face. UID: USER20240611110230162
+2024-08-29 07:50:59,625 - ERROR - No known encodings found. Encoding new face. UID: USER20240531125920839
+2024-08-29 07:58:31,137 - ERROR - No known encodings found. Encoding new face. UID: USER20240111121909629
+2024-08-29 08:02:40,978 - ERROR - No known encodings found. Encoding new face. UID: USER20240106122240033
+2024-08-29 14:29:20,189 - ERROR - No known encodings found. Encoding new face. UID: USER20240106121142915
+2024-08-29 14:31:42,237 - ERROR - No known encodings found. Encoding new face. UID: USER20240809125952371
+2024-08-29 14:59:07,754 - ERROR - No known encodings found. Encoding new face. UID: USER20240201152908592
+2024-08-29 15:01:04,278 - ERROR - No known encodings found. Encoding new face. UID: USER20240212105311349
+2024-08-29 15:03:03,119 - ERROR - No known encodings found. Encoding new face. UID: USER20240111121909629
+2024-08-29 15:33:30,378 - ERROR - No known encodings found. Encoding new face. UID: USER20240611110230162
+2024-08-29 15:38:40,192 - ERROR - No known encodings found. Encoding new face. UID: USER20240106122240033
+2024-08-29 16:00:22,373 - ERROR - No known encodings found. Encoding new face. UID: USER20240531125920839
+2024-08-29 18:45:39,229 - ERROR - No known encodings found. Encoding new face. UID: USER20240327115324859
+2024-08-29 22:03:46,802 - ERROR - No known encodings found. Encoding new face. UID: USER20240327115324859
+2024-08-29 23:00:43,400 - ERROR - No known encodings found. Encoding new face. UID: USER20240201153030910
+2024-08-30 06:15:54,237 - ERROR - No known encodings found. Encoding new face. UID: USER20240106122240033
+2024-08-30 06:19:14,816 - ERROR - No known encodings found. Encoding new face. UID: USER20240809125952371
+2024-08-30 06:19:33,547 - ERROR - No known encodings found. Encoding new face. UID: USER20240111121909629
+2024-08-30 06:50:13,931 - ERROR - No known encodings found. Encoding new face. UID: USER20240607081757383
+2024-08-30 07:03:33,577 - ERROR - No known encodings found. Encoding new face. UID: USER20240201152908592
+2024-08-30 07:04:32,136 - ERROR - No known encodings found. Encoding new face. UID: USER20240212105311349
+2024-08-30 11:20:29,950 - ERROR - No known encodings found. Encoding new face. UID: USER20240607081757383
+2024-08-30 11:20:29,994 - ERROR - No known encodings found. Encoding new face. UID: USER20240212105233204
+2024-08-30 14:31:57,395 - ERROR - No known encodings found. Encoding new face. UID: USER20240809125952371
+2024-08-30 14:49:13,661 - ERROR - No known encodings found. Encoding new face. UID: USER20240111121909629
+2024-08-30 15:00:35,905 - ERROR - No known encodings found. Encoding new face. UID: USER20240212105311349
+2024-08-30 15:01:32,860 - ERROR - No known encodings found. Encoding new face. UID: USER20240201153030910
+2024-08-30 15:30:33,951 - ERROR - No known encodings found. Encoding new face. UID: USER20240106122240033
+2024-08-30 16:00:16,851 - ERROR - No known encodings found. Encoding new face. UID: USER20240531125920839
+2024-08-30 16:37:36,265 - ERROR - No known encodings found. Encoding new face. UID: USER20240212105233204
+2024-08-30 18:30:25,774 - ERROR - No known encodings found. Encoding new face. UID: USER20240611110230162
+2024-08-30 23:00:33,396 - ERROR - No known encodings found. Encoding new face. UID: USER20240201153030910
+2024-08-30 23:00:33,659 - ERROR - No known encodings found. Encoding new face. UID: USER20240201153030910
+2024-08-30 23:00:33,839 - ERROR - No known encodings found. Encoding new face. UID: USER20240201153030910
+2024-09-02 01:27:26,463 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 01:27:26,463 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 01:27:26,463 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 01:27:26,464 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 01:27:26,464 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 01:27:26,464 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 01:27:26,486 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 01:27:26,486 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 01:27:26,489 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 01:27:26,490 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 01:27:26,533 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 01:27:26,534 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 01:27:26,548 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 01:27:26,549 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 01:27:26,615 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 01:27:26,615 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 11:24:27,599 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 11:24:27,599 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 11:24:27,599 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 11:24:27,599 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 11:24:27,599 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 11:24:27,599 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 11:24:27,600 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 11:24:27,600 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 11:24:27,599 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 11:24:27,600 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 11:24:27,599 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 11:24:27,600 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 11:24:27,600 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 11:24:27,600 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 11:24:27,600 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 11:24:27,600 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:08:18,335 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:08:18,335 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:08:18,344 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.130:5000
+2024-09-02 14:08:18,344 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-02 14:08:18,345 - INFO -  * Restarting with stat
+2024-09-02 14:08:19,391 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:08:19,391 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:08:19,399 - WARNING -  * Debugger is active!
+2024-09-02 14:08:19,401 - INFO -  * Debugger PIN: 731-889-132
+2024-09-02 14:08:25,211 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:25] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:08:26,536 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:26] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:08:29,039 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:29] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:08:29,850 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:29] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:08:30,484 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:30] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:08:30,637 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:30] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:08:30,990 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:30] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:08:31,542 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:31] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:08:31,937 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:31] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:08:32,519 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:32] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:08:32,655 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:32] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:08:33,208 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:33] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:08:33,332 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:33] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:08:33,723 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:33] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:08:34,009 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:34] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:08:34,399 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:34] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:08:44,714 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:44] "POST /DeleteADoc HTTP/1.1" 200 -
+2024-09-02 14:08:44,716 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:44] "POST /QueryACollection HTTP/1.1" 200 -
+2024-09-02 14:08:48,220 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:48] "POST /DeleteADoc HTTP/1.1" 200 -
+2024-09-02 14:08:48,222 - INFO - 127.0.0.1 - - [02/Sep/2024 14:08:48] "POST /QueryACollection HTTP/1.1" 200 -
+2024-09-02 14:09:25,426 - INFO -  * Detected change in '/home/shaganan/server/InstantDigitsApi2/MangoDB/dbOperations.py', reloading
+2024-09-02 14:09:25,841 - INFO -  * Restarting with stat
+2024-09-02 14:09:26,826 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:09:26,826 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:09:26,834 - WARNING -  * Debugger is active!
+2024-09-02 14:09:26,836 - INFO -  * Debugger PIN: 731-889-132
+2024-09-02 14:09:36,507 - INFO - 127.0.0.1 - - [02/Sep/2024 14:09:36] "POST /DeleteADoc HTTP/1.1" 200 -
+2024-09-02 14:09:36,510 - INFO - 127.0.0.1 - - [02/Sep/2024 14:09:36] "POST /QueryACollection HTTP/1.1" 200 -
+2024-09-02 14:09:50,079 - INFO - 127.0.0.1 - - [02/Sep/2024 14:09:50] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:09:51,506 - INFO - 127.0.0.1 - - [02/Sep/2024 14:09:51] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:09:54,084 - INFO - 127.0.0.1 - - [02/Sep/2024 14:09:54] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:09:55,063 - INFO - 127.0.0.1 - - [02/Sep/2024 14:09:55] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:09:55,691 - INFO - 127.0.0.1 - - [02/Sep/2024 14:09:55] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:09:55,841 - INFO - 127.0.0.1 - - [02/Sep/2024 14:09:55] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:09:56,191 - INFO - 127.0.0.1 - - [02/Sep/2024 14:09:56] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:09:56,732 - INFO - 127.0.0.1 - - [02/Sep/2024 14:09:56] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:09:57,119 - INFO - 127.0.0.1 - - [02/Sep/2024 14:09:57] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:09:57,695 - INFO - 127.0.0.1 - - [02/Sep/2024 14:09:57] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:09:57,829 - INFO - 127.0.0.1 - - [02/Sep/2024 14:09:57] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:09:58,376 - INFO - 127.0.0.1 - - [02/Sep/2024 14:09:58] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:09:58,499 - INFO - 127.0.0.1 - - [02/Sep/2024 14:09:58] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:09:58,884 - INFO - 127.0.0.1 - - [02/Sep/2024 14:09:58] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:09:59,167 - INFO - 127.0.0.1 - - [02/Sep/2024 14:09:59] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:09:59,555 - INFO - 127.0.0.1 - - [02/Sep/2024 14:09:59] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-02 14:10:17,329 - INFO - 127.0.0.1 - - [02/Sep/2024 14:10:17] "POST /DeleteADoc HTTP/1.1" 200 -
+2024-09-02 14:10:17,331 - INFO - 127.0.0.1 - - [02/Sep/2024 14:10:17] "POST /QueryACollection HTTP/1.1" 200 -
+2024-09-02 14:10:19,027 - INFO - 127.0.0.1 - - [02/Sep/2024 14:10:19] "POST /DeleteADoc HTTP/1.1" 200 -
+2024-09-02 14:10:19,029 - INFO - 127.0.0.1 - - [02/Sep/2024 14:10:19] "POST /QueryACollection HTTP/1.1" 200 -
+2024-09-02 14:11:43,618 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:11:43,618 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:11:43,669 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:11:43,669 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:11:43,797 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:11:43,798 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:11:43,827 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:11:43,827 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:11:43,880 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:11:43,880 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:11:43,914 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:11:43,914 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:11:43,927 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:11:43,928 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:11:43,966 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-02 14:11:43,966 - WARNING - Unknown option passed to Flask-CORS: support_credentials
