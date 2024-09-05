@@ -96,7 +96,8 @@ def queryADocs(data):
     fields = data.get('fields', {})
     orderBy = data.get('orderBy', '')
     limit = data.get('limit', 0)  # Add support for limit (pagination)
-
+    filters['type'] =filters['type'] if 'type' in filters else { "$ne": 'Trash' }
+    
     try:
         sort = []
         if orderBy:

@@ -284,3 +284,111 @@ KeyError: 'uid'
 2024-09-02 14:11:43,928 - WARNING - Unknown option passed to Flask-CORS: support_credentials
 2024-09-02 14:11:43,966 - WARNING - Unknown option passed to Flask-CORS: support_credentials
 2024-09-02 14:11:43,966 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 18:09:13,097 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 18:09:13,097 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 18:09:13,108 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 18:09:13,109 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 18:09:13,112 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 18:09:13,112 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 18:09:13,149 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 18:09:13,150 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 18:09:13,156 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 18:09:13,156 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 18:09:13,162 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 18:09:13,163 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 18:09:13,194 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 18:09:13,195 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 18:09:13,217 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 18:09:13,218 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:35:43,927 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:35:43,927 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:35:43,942 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.130:5000
+2024-09-05 19:35:43,942 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-05 19:35:43,943 - INFO -  * Restarting with stat
+2024-09-05 19:35:45,035 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:35:45,036 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:35:45,044 - WARNING -  * Debugger is active!
+2024-09-05 19:35:45,052 - INFO -  * Debugger PIN: 134-706-370
+2024-09-05 19:38:00,887 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:38:00,887 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:38:01,523 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.130:5000
+2024-09-05 19:38:01,523 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-05 19:38:10,189 - INFO - 127.0.0.1 - - [05/Sep/2024 19:38:10] "POST /QueryACollection HTTP/1.1" 200 -
+2024-09-05 19:38:16,807 - INFO - 127.0.0.1 - - [05/Sep/2024 19:38:16] "POST /QueryACollection HTTP/1.1" 200 -
+2024-09-05 19:38:22,644 - INFO - 127.0.0.1 - - [05/Sep/2024 19:38:22] "POST /QueryACollection HTTP/1.1" 200 -
+2024-09-05 19:38:22,763 - INFO - 127.0.0.1 - - [05/Sep/2024 19:38:22] "POST /QueryACollection HTTP/1.1" 200 -
+2024-09-05 19:38:22,776 - INFO - 127.0.0.1 - - [05/Sep/2024 19:38:22] "POST /IntelliGoldSpecialTasks HTTP/1.1" 200 -
+2024-09-05 19:38:38,458 - INFO - 127.0.0.1 - - [05/Sep/2024 19:38:38] "POST /UpdateADoc HTTP/1.1" 200 -
+2024-09-05 19:38:42,103 - INFO - 127.0.0.1 - - [05/Sep/2024 19:38:42] "POST /IntelliGoldSpecialTasks HTTP/1.1" 200 -
+2024-09-05 19:38:42,137 - INFO - 127.0.0.1 - - [05/Sep/2024 19:38:42] "POST /QueryACollection HTTP/1.1" 200 -
+2024-09-05 19:38:55,924 - INFO - 127.0.0.1 - - [05/Sep/2024 19:38:55] "POST /IntelliGoldSpecialTasks HTTP/1.1" 200 -
+2024-09-05 19:38:56,231 - INFO - 127.0.0.1 - - [05/Sep/2024 19:38:56] "POST /UpdateADoc HTTP/1.1" 200 -
+2024-09-05 19:38:56,538 - INFO - 127.0.0.1 - - [05/Sep/2024 19:38:56] "POST /QueryACollection HTTP/1.1" 200 -
+2024-09-05 19:38:56,552 - INFO - 127.0.0.1 - - [05/Sep/2024 19:38:56] "POST /IntelliGoldSpecialTasks HTTP/1.1" 200 -
+2024-09-05 19:39:04,935 - INFO - 127.0.0.1 - - [05/Sep/2024 19:39:04] "POST /QueryACollection HTTP/1.1" 200 -
+2024-09-05 19:39:37,792 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:39:37,792 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:39:37,962 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:39:37,963 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:39:37,979 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:39:37,979 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:39:37,994 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:39:37,994 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:39:38,031 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:39:38,031 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:39:38,032 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:39:38,032 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:39:38,142 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:39:38,142 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:39:38,146 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:39:38,147 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:41:20,135 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:41:20,136 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:41:20,279 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:41:20,279 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:41:20,327 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:41:20,328 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:41:20,427 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:41:20,427 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:41:20,446 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:41:20,446 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:41:20,463 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:41:20,463 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:41:20,472 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:41:20,472 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:41:20,522 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:41:20,522 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:03,209 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:03,209 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:03,218 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.130:5000
+2024-09-05 19:46:03,218 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-05 19:46:03,218 - INFO -  * Restarting with stat
+2024-09-05 19:46:04,222 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:04,222 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:04,230 - WARNING -  * Debugger is active!
+2024-09-05 19:46:04,231 - INFO -  * Debugger PIN: 134-706-370
+2024-09-05 19:46:28,024 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:28,024 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:28,075 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:28,076 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:28,082 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:28,082 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:28,176 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:28,176 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:28,246 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:28,246 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:28,293 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:28,293 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:28,310 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:28,310 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:28,341 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-05 19:46:28,341 - WARNING - Unknown option passed to Flask-CORS: support_credentials

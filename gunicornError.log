@@ -167,3 +167,74 @@ SystemExit: 1
 [2024-09-02 14:11:41 -0400] [19874] [INFO] Booting worker with pid: 19874
 [2024-09-02 14:11:42 -0400] [19875] [INFO] Booting worker with pid: 19875
 [2024-09-02 14:11:42 -0400] [19883] [INFO] Booting worker with pid: 19883
+[2024-09-05 18:09:10 -0400] [2500] [INFO] Starting gunicorn 23.0.0
+[2024-09-05 18:09:10 -0400] [2500] [INFO] Listening at: http://0.0.0.0:8000 (2500)
+[2024-09-05 18:09:10 -0400] [2500] [INFO] Using worker: sync
+[2024-09-05 18:09:10 -0400] [2502] [INFO] Booting worker with pid: 2502
+[2024-09-05 18:09:10 -0400] [2503] [INFO] Booting worker with pid: 2503
+[2024-09-05 18:09:10 -0400] [2518] [INFO] Booting worker with pid: 2518
+[2024-09-05 18:09:10 -0400] [2519] [INFO] Booting worker with pid: 2519
+[2024-09-05 18:09:11 -0400] [2520] [INFO] Booting worker with pid: 2520
+[2024-09-05 18:09:11 -0400] [2528] [INFO] Booting worker with pid: 2528
+[2024-09-05 18:09:11 -0400] [2543] [INFO] Booting worker with pid: 2543
+[2024-09-05 18:09:11 -0400] [2544] [INFO] Booting worker with pid: 2544
+[2024-09-05 19:39:33 -0400] [2500] [INFO] Handling signal: int
+[2024-09-05 19:39:33 -0400] [2503] [INFO] Worker exiting (pid: 2503)
+[2024-09-05 19:39:33 -0400] [2519] [INFO] Worker exiting (pid: 2519)
+[2024-09-05 19:39:33 -0400] [2520] [INFO] Worker exiting (pid: 2520)
+[2024-09-05 19:39:33 -0400] [2502] [INFO] Worker exiting (pid: 2502)
+[2024-09-05 19:39:33 -0400] [2544] [INFO] Worker exiting (pid: 2544)
+[2024-09-05 19:39:33 -0400] [2543] [INFO] Worker exiting (pid: 2543)
+[2024-09-05 19:39:33 -0400] [2518] [INFO] Worker exiting (pid: 2518)
+[2024-09-05 19:39:33 -0400] [2528] [INFO] Worker exiting (pid: 2528)
+[2024-09-05 19:39:35 -0400] [5096] [INFO] Starting gunicorn 23.0.0
+[2024-09-05 19:39:35 -0400] [5096] [INFO] Listening at: http://0.0.0.0:8000 (5096)
+[2024-09-05 19:39:35 -0400] [5096] [INFO] Using worker: sync
+[2024-09-05 19:39:35 -0400] [5097] [INFO] Booting worker with pid: 5097
+[2024-09-05 19:39:35 -0400] [5098] [INFO] Booting worker with pid: 5098
+[2024-09-05 19:39:35 -0400] [5106] [INFO] Booting worker with pid: 5106
+[2024-09-05 19:39:35 -0400] [5114] [INFO] Booting worker with pid: 5114
+[2024-09-05 19:39:35 -0400] [5115] [INFO] Booting worker with pid: 5115
+[2024-09-05 19:39:36 -0400] [5123] [INFO] Booting worker with pid: 5123
+[2024-09-05 19:39:36 -0400] [5131] [INFO] Booting worker with pid: 5131
+[2024-09-05 19:39:36 -0400] [5139] [INFO] Booting worker with pid: 5139
+[2024-09-05 19:41:15 -0400] [5096] [INFO] Handling signal: int
+[2024-09-05 19:41:15 -0400] [5114] [INFO] Worker exiting (pid: 5114)
+[2024-09-05 19:41:15 -0400] [5098] [INFO] Worker exiting (pid: 5098)
+[2024-09-05 19:41:15 -0400] [5097] [INFO] Worker exiting (pid: 5097)
+[2024-09-05 19:41:15 -0400] [5139] [INFO] Worker exiting (pid: 5139)
+[2024-09-05 19:41:15 -0400] [5106] [INFO] Worker exiting (pid: 5106)
+[2024-09-05 19:41:15 -0400] [5115] [INFO] Worker exiting (pid: 5115)
+[2024-09-05 19:41:15 -0400] [5131] [INFO] Worker exiting (pid: 5131)
+[2024-09-05 19:41:15 -0400] [5123] [INFO] Worker exiting (pid: 5123)
+[2024-09-05 19:41:18 -0400] [5304] [INFO] Starting gunicorn 23.0.0
+[2024-09-05 19:41:18 -0400] [5304] [INFO] Listening at: http://0.0.0.0:8000 (5304)
+[2024-09-05 19:41:18 -0400] [5304] [INFO] Using worker: sync
+[2024-09-05 19:41:18 -0400] [5305] [INFO] Booting worker with pid: 5305
+[2024-09-05 19:41:18 -0400] [5306] [INFO] Booting worker with pid: 5306
+[2024-09-05 19:41:18 -0400] [5314] [INFO] Booting worker with pid: 5314
+[2024-09-05 19:41:18 -0400] [5322] [INFO] Booting worker with pid: 5322
+[2024-09-05 19:41:18 -0400] [5323] [INFO] Booting worker with pid: 5323
+[2024-09-05 19:41:18 -0400] [5324] [INFO] Booting worker with pid: 5324
+[2024-09-05 19:41:18 -0400] [5325] [INFO] Booting worker with pid: 5325
+[2024-09-05 19:41:18 -0400] [5340] [INFO] Booting worker with pid: 5340
+[2024-09-05 19:46:21 -0400] [5304] [INFO] Handling signal: int
+[2024-09-05 19:46:21 -0400] [5323] [INFO] Worker exiting (pid: 5323)
+[2024-09-05 19:46:21 -0400] [5325] [INFO] Worker exiting (pid: 5325)
+[2024-09-05 19:46:21 -0400] [5305] [INFO] Worker exiting (pid: 5305)
+[2024-09-05 19:46:21 -0400] [5314] [INFO] Worker exiting (pid: 5314)
+[2024-09-05 19:46:21 -0400] [5324] [INFO] Worker exiting (pid: 5324)
+[2024-09-05 19:46:21 -0400] [5306] [INFO] Worker exiting (pid: 5306)
+[2024-09-05 19:46:21 -0400] [5340] [INFO] Worker exiting (pid: 5340)
+[2024-09-05 19:46:21 -0400] [5322] [INFO] Worker exiting (pid: 5322)
+[2024-09-05 19:46:25 -0400] [5662] [INFO] Starting gunicorn 23.0.0
+[2024-09-05 19:46:25 -0400] [5662] [INFO] Listening at: http://0.0.0.0:8000 (5662)
+[2024-09-05 19:46:25 -0400] [5662] [INFO] Using worker: sync
+[2024-09-05 19:46:25 -0400] [5663] [INFO] Booting worker with pid: 5663
+[2024-09-05 19:46:25 -0400] [5671] [INFO] Booting worker with pid: 5671
+[2024-09-05 19:46:26 -0400] [5672] [INFO] Booting worker with pid: 5672
+[2024-09-05 19:46:26 -0400] [5673] [INFO] Booting worker with pid: 5673
+[2024-09-05 19:46:26 -0400] [5681] [INFO] Booting worker with pid: 5681
+[2024-09-05 19:46:26 -0400] [5682] [INFO] Booting worker with pid: 5682
+[2024-09-05 19:46:26 -0400] [5697] [INFO] Booting worker with pid: 5697
+[2024-09-05 19:46:26 -0400] [5698] [INFO] Booting worker with pid: 5698
