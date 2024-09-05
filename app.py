@@ -5,6 +5,8 @@ from flask_cors import CORS, cross_origin
 from ImageProcessing import FaceProcessing
 from MangoDB import dbOperations
 
+from IntelliGold import Main as IntelliGold
+
 app = Flask(__name__)
 CORS(app, support_credentials=True)
 
@@ -56,6 +58,14 @@ def queryDocs():
     if not mangoIsOn:
         return jsonify({'status':False, 'mes':'Database is NOT reachable.' }),404
     return jsonify(dbOperations.queryADocs(request.json)),200
+
+
+@app.route('/IntelliGoldSpecialTasks', methods=['POST'])
+def intelliGoldTasks():
+    if not mangoIsOn:
+        return jsonify({'status':False, 'mes':'Database is NOT reachable.' }),404
+    return jsonify(IntelliGold.taskDivider(request.json, dbOperations=dbOperations)),200
+
 
 
 if __name__ == '__main__':
