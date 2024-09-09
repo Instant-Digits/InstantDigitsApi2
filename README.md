@@ -9,3 +9,4 @@ pip install face-recognition
     pip install git+https://github.com/ageitgey/face_recognition_models
 
 
+sudo crontab -e sheduled tasks
