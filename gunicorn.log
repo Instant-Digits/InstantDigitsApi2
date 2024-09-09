@@ -1969,3 +1969,4 @@
 127.0.0.1 - - [08/Sep/2024:16:34:24 -0400] "POST /FaceCompareBase64 HTTP/1.1" 200 56 "-" "Shinol360/1 CFNetwork/1496.0.7 Darwin/23.5.0"
 127.0.0.1 - - [08/Sep/2024:19:43:16 -0400] "POST /FaceCompareBase64 HTTP/1.1" 200 70 "-" "Shinol360/1 CFNetwork/1496.0.7 Darwin/23.5.0"
 127.0.0.1 - - [08/Sep/2024:19:43:30 -0400] "POST /FaceCompareBase64 HTTP/1.1" 200 56 "-" "Shinol360/1 CFNetwork/1496.0.7 Darwin/23.5.0"
+127.0.0.1 - - [08/Sep/2024:21:27:34 -0400] "POST /QueryACollection HTTP/1.1" 200 7059 "-" "IntelliGold/1 CFNetwork/1498.700.2 Darwin/23.6.0"
