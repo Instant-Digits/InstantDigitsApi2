@@ -48,11 +48,12 @@ def main(persont):
     url = 'https://pleasing-javelin-absolutely.ngrok-free.app/FaceCompareBase64'
 
     # Iterate over each image in the directory and compare
+    start_timeM = time.time()
+    i=0
     for filename in os.listdir(unknownImageDir):
         if filename.lower().endswith(('.png', '.jpg', '.jpeg')):
             unknownImagePath = os.path.join(unknownImageDir, filename)
-            # show_image(unknownImagePath)
-            # Send the POST request and print the results
+            i+=1
             start_time = time.time()
             out = send_post_request(url, knownImagePath, unknownImagePath, uid)
             end_time = time.time()
@@ -62,7 +63,7 @@ def main(persont):
             # time.sleep(0.5)
             print()
 
-    print('End')
+    print('End',i, time.time()-start_timeM)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Image comparison script")
