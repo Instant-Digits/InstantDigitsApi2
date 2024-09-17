@@ -4,7 +4,7 @@ from pyngrok import ngrok
 from flask_cors import CORS, cross_origin
 from ImageProcessing import FaceProcessing
 from MangoDB import dbOperations
-
+from pyngrok import ngrok
 from IntelliGold import Main as IntelliGold
 
 app = Flask(__name__)
@@ -12,6 +12,9 @@ CORS(app, support_credentials=True)
 
 mangoIsOn=dbOperations.checkMongoConnection()
 
+ngrok.set_auth_token("2l1FmWtdL2pI7BauK8MFl3aOFEn_89TcWgQA4m7zcDSFXPBMH")
+url = ngrok.connect(5000, bind_tls=True, hostname="jennet-immortal-gently.ngrok-free.app")
+print(url)
 
 @app.route("/")
 @cross_origin(supports_credentials=True)
