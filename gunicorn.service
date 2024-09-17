@@ -1,0 +1,12 @@
+[Unit]
+Description=Gunicorn service for Flask app
+After=network.target
+
+[Service]
+ExecStart=/root/InstantDigitsApi2/gunicorn.sh
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
