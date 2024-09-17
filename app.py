@@ -73,5 +73,5 @@ if __name__ == '__main__':
     # url = ngrok.connect(5000, bind_tls=True, hostname="pleasing-javelin-absolutely.ngrok-free.app")
     # print(f" * ngrok tunnel \"{url}\" -> \"http://127.0.0.1:5000\"")
 
-    app.run(host='0.0.0.0', port=5000, debug=True, threaded=False)#
-    
+    app.run(host='0.0.0.0', port=5000)#
+
