@@ -12,10 +12,6 @@ CORS(app, support_credentials=True)
 
 mangoIsOn=dbOperations.checkMongoConnection()
 
-ngrok.set_auth_token("2l1FmWtdL2pI7BauK8MFl3aOFEn_89TcWgQA4m7zcDSFXPBMH")
-url = ngrok.connect(5000, bind_tls=True, hostname="jennet-immortal-gently.ngrok-free.app")
-print(url)
-
 @app.route("/")
 @cross_origin(supports_credentials=True)
 def hello_world():
@@ -76,5 +72,5 @@ if __name__ == '__main__':
     # url = ngrok.connect(5000, bind_tls=True, hostname="pleasing-javelin-absolutely.ngrok-free.app")
     # print(f" * ngrok tunnel \"{url}\" -> \"http://127.0.0.1:5000\"")
 
-    app.run(host='0.0.0.0', port=5000)#
+    app.run(host='0.0.0.0', port=8000)#
 
