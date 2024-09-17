@@ -392,3 +392,146 @@ KeyError: 'uid'
 2024-09-05 19:46:28,310 - WARNING - Unknown option passed to Flask-CORS: support_credentials
 2024-09-05 19:46:28,341 - WARNING - Unknown option passed to Flask-CORS: support_credentials
 2024-09-05 19:46:28,341 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:09:58,323 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:09:58,324 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:10:03,351 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://216.155.157.204:5000
+2024-09-17 02:10:03,351 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 02:10:03,352 - INFO -  * Restarting with stat
+2024-09-17 02:10:05,248 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:10:05,248 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:10:10,270 - WARNING -  * Debugger is active!
+2024-09-17 02:10:10,367 - INFO -  * Debugger PIN: 778-203-603
+2024-09-17 02:11:24,265 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:11:24,265 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:11:29,285 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://216.155.157.204:5000
+2024-09-17 02:11:29,286 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 02:11:29,286 - INFO -  * Restarting with stat
+2024-09-17 02:11:30,709 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:11:30,710 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:11:35,728 - WARNING -  * Debugger is active!
+2024-09-17 02:11:35,729 - INFO -  * Debugger PIN: 778-203-603
+2024-09-17 02:15:31,956 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:15:31,956 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:15:36,973 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-17 02:15:36,974 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 02:21:41,633 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:21:41,634 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:21:46,648 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://216.155.157.204:5000
+2024-09-17 02:21:46,648 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 02:24:05,935 - ERROR - 173.33.175.94 - - [17/Sep/2024 02:24:05] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00-\x00\x02\x01\x01\x00\x12\x00\x00\x00')
+2024-09-17 02:24:05,935 - INFO - 173.33.175.94 - - [17/Sep/2024 02:24:05] "[35m[1m\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03\x15Ø¼\x06¶eä\x91bRÈ\x05\x84¶\x16+þ\x973\x8f\x10\x03\x96\x03\x0f];¤ZÆ\x05Ì Ç¹KÖ\x03\x1es¡jÃÄ\x18".5âºg\x00¶Bd¹d\x9e*\x08\x94ðÆÄî\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sªª\x00\x00ÿ\x01\x00\x01\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06::\x03\x04\x03\x03\x00\x17\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00-\x00\x02\x01\x01\x00\x12\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+2024-09-17 02:24:05,990 - ERROR - 173.33.175.94 - - [17/Sep/2024 02:24:05] code 400, message Bad request version ('Z')
+2024-09-17 02:24:05,990 - INFO - 173.33.175.94 - - [17/Sep/2024 02:24:05] "[35m[1m\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03%5×Ì§\x91\x9b\x98¸h;\x96ú,ÆZÚÁ\x1c¤S·n\x9d\x873R\x0d>±:P ²àÎÒt\x07R\x0fpH'ë\x81Ù\x04Í¯w÷É\x1c\x03Øv¥\x09Z[0m" HTTPStatus.BAD_REQUEST -
+2024-09-17 02:26:00,214 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:26:00,214 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:26:05,229 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://216.155.157.204:5000
+2024-09-17 02:26:05,229 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 02:26:07,573 - INFO - 173.33.175.94 - - [17/Sep/2024 02:26:07] "GET / HTTP/1.1" 200 -
+2024-09-17 02:26:07,690 - INFO - 173.33.175.94 - - [17/Sep/2024 02:26:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-17 02:26:11,923 - INFO - 173.33.175.94 - - [17/Sep/2024 02:26:11] "GET / HTTP/1.1" 200 -
+2024-09-17 02:28:41,601 - INFO - 173.33.175.94 - - [17/Sep/2024 02:28:41] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:28:42,104 - INFO - 173.33.175.94 - - [17/Sep/2024 02:28:42] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:28:42,706 - INFO - 173.33.175.94 - - [17/Sep/2024 02:28:42] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:28:43,556 - INFO - 173.33.175.94 - - [17/Sep/2024 02:28:43] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:28:45,401 - INFO - 173.33.175.94 - - [17/Sep/2024 02:28:45] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:28:46,430 - INFO - 173.33.175.94 - - [17/Sep/2024 02:28:46] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:28:46,757 - INFO - 173.33.175.94 - - [17/Sep/2024 02:28:46] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:28:48,341 - INFO - 173.33.175.94 - - [17/Sep/2024 02:28:48] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:28:48,598 - INFO - 173.33.175.94 - - [17/Sep/2024 02:28:48] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:28:48,848 - INFO - 173.33.175.94 - - [17/Sep/2024 02:28:48] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:28:49,451 - INFO - 173.33.175.94 - - [17/Sep/2024 02:28:49] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:28:49,947 - INFO - 173.33.175.94 - - [17/Sep/2024 02:28:49] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:28:50,991 - INFO - 173.33.175.94 - - [17/Sep/2024 02:28:50] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:28:51,933 - INFO - 173.33.175.94 - - [17/Sep/2024 02:28:51] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:28:52,793 - INFO - 173.33.175.94 - - [17/Sep/2024 02:28:52] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:28:53,288 - INFO - 173.33.175.94 - - [17/Sep/2024 02:28:53] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:15,796 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:15] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:16,330 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:16] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:17,006 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:17] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:17,785 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:17] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:19,770 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:19] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:20,718 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:20] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:21,056 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:21] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:22,830 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:22] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:23,095 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:23] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:23,385 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:23] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:24,041 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:24] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:24,524 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:24] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:25,624 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:25] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:26,492 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:26] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:27,386 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:27] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:27,918 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:27] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:39,514 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:39] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:39,978 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:39] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:40,681 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:40] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:41,457 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:41] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:43,904 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:43] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:29:44,067 - INFO - 173.33.175.94 - - [17/Sep/2024 02:29:44] "POST /FaceCompareBase64 HTTP/1.1" 200 -
+2024-09-17 02:31:57,327 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:31:57,333 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:31:57,332 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:31:57,334 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:31:57,358 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:31:57,358 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:31:57,363 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 02:31:57,363 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 03:20:23,192 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 03:20:23,193 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 03:20:23,223 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://216.155.157.204:5000
+2024-09-17 03:20:23,223 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 03:49:48,846 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 03:49:48,858 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 03:49:48,947 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 03:49:48,956 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 03:49:49,028 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 03:49:49,029 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 03:49:49,048 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 03:49:49,048 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 03:53:21,854 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 03:53:21,909 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 03:53:21,944 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 03:53:21,946 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 03:53:21,959 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 03:53:21,961 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 03:53:21,989 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 03:53:21,991 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:19:52,036 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:19:52,036 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:19:52,039 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:19:52,036 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:19:52,039 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:19:52,041 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:19:52,096 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:19:52,098 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:22:07,154 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:22:07,167 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:22:07,158 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:22:07,169 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:22:07,162 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:22:07,170 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:22:07,166 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:22:07,171 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:33:40,340 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:33:40,343 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:33:40,403 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:33:40,403 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:33:40,562 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:33:40,563 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:33:40,577 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 04:33:40,578 - WARNING - Unknown option passed to Flask-CORS: support_credentials
