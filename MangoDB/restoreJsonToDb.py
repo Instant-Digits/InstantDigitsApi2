@@ -2,8 +2,8 @@ import json
 from pymongo import MongoClient
 from pymongo.errors import PyMongoError
 
-mongoUri = 'mongodb://localhost:27017/instantDigitsDBTest'
-databaseName = 'instantDigitsDBTest'
+mongoUri = 'mongodb://localhost:27017/instantDigitsDB'
+databaseName = 'instantDigitsDB'
 inputFile = 'instantDigitsDB.json'
 
 def restoreJsonToMongodb(mongoUri, databaseName, inputFile):
