@@ -1480,3 +1480,5 @@ KeyError: 'uid'
 2024-09-17 19:19:37,723 - WARNING - Unknown option passed to Flask-CORS: support_credentials
 2024-09-17 19:19:37,722 - WARNING - Unknown option passed to Flask-CORS: support_credentials
 2024-09-17 19:19:37,725 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 21:17:55,191 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-17 21:17:55,192 - WARNING - Unknown option passed to Flask-CORS: support_credentials

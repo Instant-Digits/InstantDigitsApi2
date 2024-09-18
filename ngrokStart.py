@@ -11,12 +11,12 @@ def run_command(command):
 
 def setup_ngrok():
     # Add ngrok authtoken to the configuration
-    authtoken = "2mCqd3hyYiECU0cWWW1KJdwZ0Bw_4QVsPn4mdQfkR4SxPBaci"
+    authtoken = '2lAQy2D3FFFsk2Iq2nQV1WXTF0w_mHNMU9M8h8qw1LzL2JrV' # "2mCqd3hyYiECU0cWWW1KJdwZ0Bw_4QVsPn4mdQfkR4SxPBaci"
     print("Adding ngrok authtoken...")
     run_command(f"ngrok config add-authtoken {authtoken}")
 
     # Start ngrok with a static domain
-    domain = "uniformly-capable-blowfish.ngrok-free.app"
+    domain ="pleasing-javelin-absolutely.ngrok-free.app" #"uniformly-capable-blowfish.ngrok-free.app"
     port = 5000
     print(f"Starting ngrok tunnel on port {port} with domain {domain}...")
     run_command(f"ngrok http --domain={domain} {port}")
