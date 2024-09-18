@@ -238,3 +238,23 @@ SystemExit: 1
 [2024-09-05 19:46:26 -0400] [5682] [INFO] Booting worker with pid: 5682
 [2024-09-05 19:46:26 -0400] [5697] [INFO] Booting worker with pid: 5697
 [2024-09-05 19:46:26 -0400] [5698] [INFO] Booting worker with pid: 5698
+[2024-09-16 08:18:19 -0400] [8118] [INFO] Starting gunicorn 23.0.0
+[2024-09-16 08:18:19 -0400] [8118] [INFO] Listening at: http://0.0.0.0:8000 (8118)
+[2024-09-16 08:18:19 -0400] [8118] [INFO] Using worker: sync
+[2024-09-16 08:18:19 -0400] [8119] [INFO] Booting worker with pid: 8119
+[2024-09-16 08:18:19 -0400] [8120] [INFO] Booting worker with pid: 8120
+[2024-09-16 08:18:19 -0400] [8121] [INFO] Booting worker with pid: 8121
+[2024-09-16 08:18:19 -0400] [8143] [INFO] Booting worker with pid: 8143
+[2024-09-16 08:18:19 -0400] [8144] [INFO] Booting worker with pid: 8144
+[2024-09-16 08:18:19 -0400] [8145] [INFO] Booting worker with pid: 8145
+[2024-09-16 08:18:19 -0400] [8153] [INFO] Booting worker with pid: 8153
+[2024-09-16 08:18:19 -0400] [8168] [INFO] Booting worker with pid: 8168
+[2024-09-17 20:38:15 -0400] [8118] [INFO] Handling signal: int
+[2024-09-17 20:38:15 -0400] [8143] [INFO] Worker exiting (pid: 8143)
+[2024-09-17 20:38:15 -0400] [8119] [INFO] Worker exiting (pid: 8119)
+[2024-09-17 20:38:15 -0400] [8168] [INFO] Worker exiting (pid: 8168)
+[2024-09-17 20:38:15 -0400] [8145] [INFO] Worker exiting (pid: 8145)
+[2024-09-17 20:38:15 -0400] [8121] [INFO] Worker exiting (pid: 8121)
+[2024-09-17 20:38:15 -0400] [8144] [INFO] Worker exiting (pid: 8144)
+[2024-09-17 20:38:15 -0400] [8153] [INFO] Worker exiting (pid: 8153)
+[2024-09-17 20:38:15 -0400] [8120] [INFO] Worker exiting (pid: 8120)
