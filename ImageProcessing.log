@@ -1521,3 +1521,18 @@ KeyError: 'uid'
 2024-09-26 18:43:16,353 - INFO - [33mPress CTRL+C to quit[0m
 2024-09-26 18:43:45,243 - INFO - 127.0.0.1 - - [26/Sep/2024 18:43:45] "POST /ShinolQRGenerator HTTP/1.1" 200 -
 2024-09-26 18:44:42,825 - INFO - 127.0.0.1 - - [26/Sep/2024 18:44:42] "POST /ShinolQRGenerator HTTP/1.1" 200 -
+2024-09-26 22:54:47,872 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-26 22:54:47,873 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-26 22:54:47,901 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://216.155.157.204:8000
+2024-09-26 22:54:47,901 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-26 23:01:48,188 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-26 23:01:48,189 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-26 23:01:48,193 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-26 23:01:48,196 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-26 23:01:48,291 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-26 23:01:48,294 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-26 23:01:48,314 - WARNING - Unknown option passed to Flask-CORS: support_credentials
+2024-09-26 23:01:48,315 - WARNING - Unknown option passed to Flask-CORS: support_credentials
