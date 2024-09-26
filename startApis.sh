@@ -7,7 +7,7 @@ cd /root/InstantDigitsApi2
 source venv/bin/activate
 
 # Kill any existing ngrok processes
-pkill ngrok
+pkill ngrok && pkill gunicorn
 
 # Kill any existing gunicorn processes
 #pkill gunicorn

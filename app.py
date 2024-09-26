@@ -1,11 +1,13 @@
 # flask_ngrok_example.py
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_file
 from pyngrok import ngrok
 from flask_cors import CORS, cross_origin
 from ImageProcessing import FaceProcessing
 from MangoDB import dbOperations
 from pyngrok import ngrok
 from IntelliGold import Main as IntelliGold
+from Shinol.QRgenerate import GenerateShinolQRPDF
+
 
 app = Flask(__name__)
 CORS(app, support_credentials=True)
@@ -15,7 +17,7 @@ mangoIsOn=dbOperations.checkMongoConnection()
 @app.route("/")
 @cross_origin(supports_credentials=True)
 def hello_world():
-    return jsonify({'status':True,'apis':'v3.2.1'})
+    return jsonify({'status':True,'apis':'v4.2.1'})
 
 
 @app.route('/FaceCompareBase64', methods=['POST'])
@@ -27,6 +29,16 @@ def faceCompareBase64():
     result = FaceProcessing.compareFacesBase64(img1, img2, uid, dbOperations=dbOperations if mangoIsOn else False)
     print(result)    
     return jsonify(result)
+
+
+@app.route('/ShinolQRGenerator',methods=["POST"])
+def ShinolQRGenerator():
+    data = request.get_json()
+    enData = data['enData']
+    label = data['label']
+    address= data['address']
+    filename = GenerateShinolQRPDF(enData, label, address)
+    return send_file(filename)
 
 
 
