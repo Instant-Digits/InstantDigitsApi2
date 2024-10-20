@@ -15815,3 +15815,855 @@ SystemExit: 1
 [2024-09-26 23:01:40 +0000] [136205] [INFO] Booting worker with pid: 136205
 [2024-09-26 23:01:40 +0000] [136208] [INFO] Booting worker with pid: 136208
 [2024-09-26 23:01:40 +0000] [136209] [INFO] Booting worker with pid: 136209
+[2024-09-26 23:37:52 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:136209)
+[2024-09-26 23:37:52 +0000] [136209] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-26 23:37:52 +0000] [136209] [INFO] Worker exiting (pid: 136209)
+[2024-09-26 23:37:53 +0000] [136197] [ERROR] Worker (pid:136209) was sent SIGKILL! Perhaps out of memory?
+[2024-09-26 23:37:53 +0000] [136300] [INFO] Booting worker with pid: 136300
+[2024-09-27 12:43:05 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:136200)
+[2024-09-27 12:43:05 +0000] [136200] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-27 12:43:05 +0000] [136200] [INFO] Worker exiting (pid: 136200)
+[2024-09-27 12:43:06 +0000] [136197] [ERROR] Worker (pid:136200) was sent SIGKILL! Perhaps out of memory?
+[2024-09-27 12:43:06 +0000] [140911] [INFO] Booting worker with pid: 140911
+[2024-09-27 12:43:36 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:136208)
+[2024-09-27 12:43:36 +0000] [136208] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-27 12:43:36 +0000] [136208] [INFO] Worker exiting (pid: 136208)
+[2024-09-27 12:43:37 +0000] [136197] [ERROR] Worker (pid:136208) was sent SIGKILL! Perhaps out of memory?
+[2024-09-27 12:43:37 +0000] [140924] [INFO] Booting worker with pid: 140924
+[2024-09-27 12:51:38 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:140911)
+[2024-09-27 12:51:38 +0000] [140911] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-27 12:51:38 +0000] [140911] [INFO] Worker exiting (pid: 140911)
+[2024-09-27 12:51:38 +0000] [140947] [INFO] Booting worker with pid: 140947
+[2024-09-27 12:52:08 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:136300)
+[2024-09-27 12:52:08 +0000] [136300] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-27 12:52:08 +0000] [136300] [INFO] Worker exiting (pid: 136300)
+[2024-09-27 12:52:09 +0000] [136197] [ERROR] Worker (pid:136300) was sent SIGKILL! Perhaps out of memory?
+[2024-09-27 12:52:09 +0000] [140960] [INFO] Booting worker with pid: 140960
+[2024-09-27 13:44:35 +0000] [140947] [WARNING] Invalid request from ip=167.172.148.99: Invalid HTTP request line: ''
+[2024-09-27 15:48:38 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:140947)
+[2024-09-27 15:48:38 +0000] [140947] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-27 15:48:38 +0000] [140947] [INFO] Worker exiting (pid: 140947)
+[2024-09-27 15:48:38 +0000] [141266] [INFO] Booting worker with pid: 141266
+[2024-09-27 15:49:08 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:140924)
+[2024-09-27 15:49:08 +0000] [140924] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-27 15:49:08 +0000] [140924] [INFO] Worker exiting (pid: 140924)
+[2024-09-27 15:49:09 +0000] [136197] [ERROR] Worker (pid:140924) was sent SIGKILL! Perhaps out of memory?
+[2024-09-27 15:49:09 +0000] [141278] [INFO] Booting worker with pid: 141278
+[2024-09-27 20:11:15 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:141278)
+[2024-09-27 20:11:15 +0000] [141278] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-27 20:11:15 +0000] [141278] [INFO] Worker exiting (pid: 141278)
+[2024-09-27 20:11:16 +0000] [142009] [INFO] Booting worker with pid: 142009
+[2024-09-27 20:13:45 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:141266)
+[2024-09-27 20:13:45 +0000] [141266] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-27 20:13:45 +0000] [141266] [INFO] Worker exiting (pid: 141266)
+[2024-09-27 20:13:46 +0000] [136197] [ERROR] Worker (pid:141266) was sent SIGKILL! Perhaps out of memory?
+[2024-09-27 20:13:46 +0000] [142022] [INFO] Booting worker with pid: 142022
+[2024-09-28 03:11:24 +0000] [140960] [WARNING] Invalid request from ip=167.94.138.32: Invalid HTTP Version: (2, 0)
+[2024-09-28 03:13:09 +0000] [142022] [WARNING] Invalid request from ip=162.142.125.40: Invalid HTTP Version: (2, 0)
+[2024-09-28 09:31:13 +0000] [142009] [WARNING] Invalid request from ip=162.142.125.216: Invalid HTTP Version: (2, 0)
+[2024-09-28 13:04:59 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:136205)
+[2024-09-28 13:04:59 +0000] [136205] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-28 13:04:59 +0000] [136205] [INFO] Worker exiting (pid: 136205)
+[2024-09-28 13:05:00 +0000] [136197] [ERROR] Worker (pid:136205) was sent SIGKILL! Perhaps out of memory?
+[2024-09-28 13:05:00 +0000] [147442] [INFO] Booting worker with pid: 147442
+[2024-09-28 13:16:26 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:147442)
+[2024-09-28 13:16:26 +0000] [147442] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-28 13:16:26 +0000] [147442] [INFO] Worker exiting (pid: 147442)
+[2024-09-28 13:16:26 +0000] [147458] [INFO] Booting worker with pid: 147458
+[2024-09-28 21:41:05 +0000] [140960] [WARNING] Invalid request from ip=165.154.162.212: Invalid HTTP request line: ''
+[2024-09-29 21:21:54 +0000] [147458] [WARNING] Invalid request from ip=167.94.145.102: Invalid HTTP Version: (2, 0)
+[2024-09-29 22:23:35 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:142022)
+[2024-09-29 22:23:35 +0000] [142022] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-29 22:23:35 +0000] [142022] [INFO] Worker exiting (pid: 142022)
+[2024-09-29 22:23:36 +0000] [136197] [ERROR] Worker (pid:142022) was sent SIGKILL! Perhaps out of memory?
+[2024-09-29 22:23:36 +0000] [162877] [INFO] Booting worker with pid: 162877
+[2024-09-30 10:16:09 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:140960)
+[2024-09-30 10:16:09 +0000] [140960] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-30 10:16:09 +0000] [140960] [INFO] Worker exiting (pid: 140960)
+[2024-09-30 10:16:10 +0000] [136197] [ERROR] Worker (pid:140960) was sent SIGKILL! Perhaps out of memory?
+[2024-09-30 10:16:10 +0000] [167380] [INFO] Booting worker with pid: 167380
+[2024-10-01 10:58:56 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:147458)
+[2024-10-01 10:58:56 +0000] [147458] [ERROR] Error handling request /FaceCompareBase64
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/InstantDigitsApi2/app.py", line 25, in faceCompareBase64
+    data=request.get_json()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 605, in get_json
+    data = self.get_data(cache=cache)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 419, in get_data
+    rv = self.stream.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/body.py", line 221, in read
+    data = self.reader.read(1024)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/body.py", line 131, in read
+    data = self.unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-01 10:58:56 +0000] [147458] [INFO] Worker exiting (pid: 147458)
+[2024-10-01 10:58:57 +0000] [136197] [ERROR] Worker (pid:147458) was sent SIGKILL! Perhaps out of memory?
+[2024-10-01 10:58:57 +0000] [181497] [INFO] Booting worker with pid: 181497
+[2024-10-01 13:43:49 +0000] [162877] [WARNING] Invalid request from ip=167.94.138.41: Invalid HTTP Version: (2, 0)
+[2024-10-01 13:44:16 +0000] [142009] [WARNING] Invalid request from ip=206.168.34.199: Invalid HTTP Version: (2, 0)
+[2024-10-02 18:09:38 +0000] [162877] [WARNING] Invalid request from ip=91.191.209.202: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-02 20:36:50 +0000] [142009] [WARNING] Invalid request from ip=91.191.209.202: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-03 05:18:24 +0000] [142009] [WARNING] Invalid request from ip=167.94.138.50: Invalid HTTP Version: (2, 0)
+[2024-10-03 05:39:13 +0000] [162877] [WARNING] Invalid request from ip=167.94.146.55: Invalid HTTP Version: (2, 0)
+[2024-10-03 09:39:10 +0000] [162877] [WARNING] Invalid request from ip=162.142.125.38: Invalid HTTP Version: (2, 0)
+[2024-10-03 18:29:58 +0000] [167380] [WARNING] Invalid request from ip=162.142.125.33: Invalid HTTP Version: (2, 0)
+[2024-10-03 18:39:16 +0000] [181497] [WARNING] Invalid request from ip=167.94.138.62: Invalid HTTP Version: (2, 0)
+[2024-10-03 19:49:50 +0000] [181497] [WARNING] Invalid request from ip=91.191.209.206: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-03 21:19:43 +0000] [162877] [WARNING] Invalid request from ip=91.191.209.206: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-04 03:45:34 +0000] [181497] [WARNING] Invalid request from ip=64.225.110.102: Invalid HTTP request line: ''
+[2024-10-04 05:17:41 +0000] [167380] [WARNING] Invalid request from ip=157.230.103.206: Invalid HTTP request line: ''
+[2024-10-04 08:22:18 +0000] [162877] [WARNING] Invalid request from ip=165.154.11.247: Invalid HTTP request line: ''
+[2024-10-04 10:42:06 +0000] [142009] [WARNING] Invalid request from ip=194.169.175.31: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-04 13:10:14 +0000] [167380] [WARNING] Invalid request from ip=194.169.175.31: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-05 02:30:13 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:167380)
+[2024-10-05 02:30:13 +0000] [167380] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-05 02:30:13 +0000] [167380] [INFO] Worker exiting (pid: 167380)
+[2024-10-05 02:30:14 +0000] [136197] [ERROR] Worker (pid:167380) was sent SIGKILL! Perhaps out of memory?
+[2024-10-05 02:30:14 +0000] [213301] [INFO] Booting worker with pid: 213301
+[2024-10-05 04:06:18 +0000] [142009] [WARNING] Invalid request from ip=199.45.154.127: Invalid HTTP Version: (2, 0)
+[2024-10-05 09:20:57 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:162877)
+[2024-10-05 09:20:57 +0000] [162877] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-05 09:20:57 +0000] [162877] [INFO] Worker exiting (pid: 162877)
+[2024-10-05 09:20:58 +0000] [136197] [ERROR] Worker (pid:162877) was sent SIGKILL! Perhaps out of memory?
+[2024-10-05 09:20:58 +0000] [216289] [INFO] Booting worker with pid: 216289
+[2024-10-06 06:31:53 +0000] [213301] [WARNING] Invalid request from ip=188.119.66.112: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-06 21:52:33 +0000] [216289] [WARNING] Invalid request from ip=206.168.34.215: Invalid HTTP Version: (2, 0)
+[2024-10-06 23:36:58 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:216289)
+[2024-10-06 23:36:58 +0000] [216289] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-06 23:36:58 +0000] [216289] [INFO] Worker exiting (pid: 216289)
+[2024-10-06 23:36:59 +0000] [136197] [ERROR] Worker (pid:216289) was sent SIGKILL! Perhaps out of memory?
+[2024-10-06 23:36:59 +0000] [228188] [INFO] Booting worker with pid: 228188
+[2024-10-07 01:44:50 +0000] [181497] [WARNING] Invalid request from ip=167.94.145.103: Invalid HTTP Version: (2, 0)
+[2024-10-07 21:31:32 +0000] [142009] [WARNING] Invalid request from ip=167.94.146.53: Invalid HTTP Version: (2, 0)
+[2024-10-08 07:23:00 +0000] [228188] [WARNING] Invalid request from ip=162.142.125.36: Invalid HTTP Version: (2, 0)
+[2024-10-08 08:11:28 +0000] [213301] [WARNING] Invalid request from ip=80.94.95.33: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-08 16:17:05 +0000] [181497] [WARNING] Invalid request from ip=92.255.85.30: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-09 20:52:23 +0000] [228188] [WARNING] Invalid request from ip=162.142.125.221: Invalid HTTP Version: (2, 0)
+[2024-10-09 20:58:55 +0000] [228188] [WARNING] Invalid request from ip=167.94.145.96: Invalid HTTP Version: (2, 0)
+[2024-10-09 22:17:21 +0000] [213301] [WARNING] Invalid request from ip=167.94.138.45: Invalid HTTP Version: (2, 0)
+[2024-10-09 22:30:38 +0000] [142009] [WARNING] Invalid request from ip=206.168.34.222: Invalid HTTP Version: (2, 0)
+[2024-10-09 23:37:33 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:228188)
+[2024-10-09 23:37:33 +0000] [228188] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-09 23:37:33 +0000] [228188] [INFO] Worker exiting (pid: 228188)
+[2024-10-09 23:37:34 +0000] [136197] [ERROR] Worker (pid:228188) was sent SIGKILL! Perhaps out of memory?
+[2024-10-09 23:37:34 +0000] [262572] [INFO] Booting worker with pid: 262572
+[2024-10-10 01:07:15 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:262572)
+[2024-10-10 01:07:15 +0000] [262572] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-10 01:07:15 +0000] [262572] [INFO] Worker exiting (pid: 262572)
+[2024-10-10 01:07:16 +0000] [263253] [INFO] Booting worker with pid: 263253
+[2024-10-10 09:26:18 +0000] [213301] [WARNING] Invalid request from ip=199.45.154.136: Invalid HTTP Version: (2, 0)
+[2024-10-10 20:00:10 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:142009)
+[2024-10-10 20:00:10 +0000] [142009] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-10 20:00:10 +0000] [142009] [INFO] Worker exiting (pid: 142009)
+[2024-10-10 20:00:11 +0000] [136197] [ERROR] Worker (pid:142009) was sent SIGKILL! Perhaps out of memory?
+[2024-10-10 20:00:11 +0000] [270914] [INFO] Booting worker with pid: 270914
+[2024-10-10 20:41:34 +0000] [213301] [WARNING] Invalid request from ip=167.94.138.120: Invalid HTTP Version: (2, 0)
+[2024-10-11 10:42:14 +0000] [263253] [WARNING] Invalid request from ip=147.78.47.133: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-11 22:47:27 +0000] [181497] [WARNING] Invalid request from ip=147.78.47.133: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-12 05:23:52 +0000] [181497] [WARNING] Invalid request from ip=206.168.34.51: Invalid HTTP Version: (2, 0)
+[2024-10-12 08:29:02 +0000] [263253] [WARNING] Invalid request from ip=167.94.146.63: Invalid HTTP Version: (2, 0)
+[2024-10-12 15:58:54 +0000] [263253] [WARNING] Invalid request from ip=139.144.52.241: Invalid HTTP request line: ''
+[2024-10-12 15:58:54 +0000] [263253] [WARNING] Invalid request from ip=139.144.52.241: Invalid HTTP Version: 'RTSP/1.0'
+[2024-10-12 15:59:15 +0000] [213301] [WARNING] Invalid request from ip=139.144.52.241: Invalid HTTP request line: 'HELP'
+[2024-10-12 15:59:35 +0000] [213301] [WARNING] Invalid request from ip=139.144.52.241: Invalid HTTP Version: 'SIP/2.0'
+[2024-10-12 23:13:37 +0000] [213301] [WARNING] Invalid request from ip=179.60.147.13: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-12 23:38:12 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:270914)
+[2024-10-12 23:38:12 +0000] [270914] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-12 23:38:12 +0000] [270914] [INFO] Worker exiting (pid: 270914)
+[2024-10-12 23:38:13 +0000] [136197] [ERROR] Worker (pid:270914) was sent SIGKILL! Perhaps out of memory?
+[2024-10-12 23:38:13 +0000] [293197] [INFO] Booting worker with pid: 293197
+[2024-10-13 02:27:28 +0000] [263253] [WARNING] Invalid request from ip=179.60.147.13: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-13 03:43:42 +0000] [213301] [WARNING] Invalid request from ip=139.59.137.120: Invalid HTTP request line: ''
+[2024-10-13 07:41:03 +0000] [213301] [WARNING] Invalid request from ip=167.94.145.105: Invalid HTTP Version: (2, 0)
+[2024-10-14 01:33:34 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:181497)
+[2024-10-14 01:33:34 +0000] [181497] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-14 01:33:34 +0000] [181497] [INFO] Worker exiting (pid: 181497)
+[2024-10-14 01:33:35 +0000] [136197] [ERROR] Worker (pid:181497) was sent SIGKILL! Perhaps out of memory?
+[2024-10-14 01:33:35 +0000] [305164] [INFO] Booting worker with pid: 305164
+[2024-10-14 01:34:05 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:263253)
+[2024-10-14 01:34:05 +0000] [263253] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-14 01:34:05 +0000] [263253] [INFO] Worker exiting (pid: 263253)
+[2024-10-14 01:34:06 +0000] [136197] [ERROR] Worker (pid:263253) was sent SIGKILL! Perhaps out of memory?
+[2024-10-14 01:34:06 +0000] [305185] [INFO] Booting worker with pid: 305185
+[2024-10-14 01:36:39 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:293197)
+[2024-10-14 01:36:39 +0000] [293197] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-14 01:36:39 +0000] [293197] [INFO] Worker exiting (pid: 293197)
+[2024-10-14 01:36:40 +0000] [136197] [ERROR] Worker (pid:293197) was sent SIGKILL! Perhaps out of memory?
+[2024-10-14 01:36:40 +0000] [305232] [INFO] Booting worker with pid: 305232
+[2024-10-14 01:37:10 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:305164)
+[2024-10-14 01:37:10 +0000] [305164] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-14 01:37:10 +0000] [305164] [INFO] Worker exiting (pid: 305164)
+[2024-10-14 01:37:11 +0000] [136197] [ERROR] Worker (pid:305164) was sent SIGKILL! Perhaps out of memory?
+[2024-10-14 01:37:11 +0000] [305249] [INFO] Booting worker with pid: 305249
+[2024-10-14 02:50:51 +0000] [305249] [WARNING] Invalid request from ip=167.94.138.45: Invalid HTTP Version: (2, 0)
+[2024-10-14 04:36:38 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:305249)
+[2024-10-14 04:36:38 +0000] [305249] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-14 04:36:38 +0000] [305249] [INFO] Worker exiting (pid: 305249)
+[2024-10-14 04:36:39 +0000] [307411] [INFO] Booting worker with pid: 307411
+[2024-10-14 04:37:09 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:305232)
+[2024-10-14 04:37:09 +0000] [305232] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-14 04:37:09 +0000] [305232] [INFO] Worker exiting (pid: 305232)
+[2024-10-14 04:37:10 +0000] [136197] [ERROR] Worker (pid:305232) was sent SIGKILL! Perhaps out of memory?
+[2024-10-14 04:37:10 +0000] [307427] [INFO] Booting worker with pid: 307427
+[2024-10-14 05:38:33 +0000] [305185] [WARNING] Invalid request from ip=167.94.138.56: Invalid HTTP Version: (2, 0)
+[2024-10-14 17:05:24 +0000] [213301] [WARNING] Invalid request from ip=179.60.147.13: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-14 20:02:26 +0000] [307411] [WARNING] Invalid request from ip=179.60.147.13: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-14 21:01:45 +0000] [213301] [WARNING] Invalid request from ip=167.94.138.119: Invalid HTTP Version: (2, 0)
+[2024-10-15 02:09:40 +0000] [213301] [WARNING] Invalid request from ip=167.94.146.52: Invalid HTTP Version: (2, 0)
+[2024-10-15 03:42:24 +0000] [213301] [WARNING] Invalid request from ip=80.94.95.33: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-15 06:08:33 +0000] [307427] [WARNING] Invalid request from ip=80.94.95.33: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-15 11:22:40 +0000] [213301] [WARNING] Invalid request from ip=91.191.209.206: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-15 12:27:57 +0000] [213301] [WARNING] Invalid request from ip=91.191.209.206: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-15 22:37:26 +0000] [213301] [WARNING] Invalid request from ip=162.142.125.34: Invalid HTTP Version: (2, 0)
+[2024-10-16 05:18:39 +0000] [307427] [WARNING] Invalid request from ip=167.94.145.101: Invalid HTTP Version: (2, 0)
+[2024-10-16 07:30:37 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:307427)
+[2024-10-16 07:30:37 +0000] [307427] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-16 07:30:37 +0000] [307427] [INFO] Worker exiting (pid: 307427)
+[2024-10-16 07:30:38 +0000] [136197] [ERROR] Worker (pid:307427) was sent SIGKILL! Perhaps out of memory?
+[2024-10-16 07:30:38 +0000] [338933] [INFO] Booting worker with pid: 338933
+[2024-10-16 15:16:26 +0000] [307411] [WARNING] Invalid request from ip=185.234.216.91: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-16 16:28:31 +0000] [307411] [WARNING] Invalid request from ip=185.234.216.91: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-17 07:44:44 +0000] [307411] [WARNING] Invalid request from ip=206.168.34.37: Invalid HTTP Version: (2, 0)
+[2024-10-17 10:09:01 +0000] [213301] [WARNING] Invalid request from ip=80.94.95.33: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-17 18:01:56 +0000] [305185] [WARNING] Invalid request from ip=162.142.125.195: Invalid HTTP Version: (2, 0)
+[2024-10-18 01:23:57 +0000] [338933] [WARNING] Invalid request from ip=104.248.29.250: Invalid HTTP request line: ''
+[2024-10-18 11:48:21 +0000] [213301] [WARNING] Invalid request from ip=167.94.138.56: Invalid HTTP Version: (2, 0)
+[2024-10-18 12:36:04 +0000] [307411] [WARNING] Invalid request from ip=199.45.154.139: Invalid HTTP Version: (2, 0)
+[2024-10-18 14:33:30 +0000] [305185] [WARNING] Invalid request from ip=80.94.95.206: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-18 20:27:35 +0000] [338933] [WARNING] Invalid request from ip=85.209.11.234: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-18 22:46:15 +0000] [213301] [WARNING] Invalid request from ip=85.209.11.234: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-10-19 09:08:12 +0000] [338933] [WARNING] Invalid request from ip=167.94.145.107: Invalid HTTP Version: (2, 0)
+[2024-10-19 18:00:22 +0000] [307411] [WARNING] Invalid request from ip=116.196.124.162: Invalid HTTP request line: ''
+[2024-10-19 18:00:23 +0000] [307411] [WARNING] Invalid request from ip=116.196.124.162: Invalid HTTP Version: 'RTSP/1.0'
+[2024-10-19 18:00:50 +0000] [338933] [WARNING] Invalid request from ip=116.196.124.162: Invalid HTTP request line: 'HELP'
+[2024-10-19 18:01:17 +0000] [307411] [WARNING] Invalid request from ip=116.196.124.162: Invalid HTTP Version: 'SIP/2.0'
+[2024-10-19 21:06:58 +0000] [305185] [WARNING] Invalid request from ip=81.19.135.47: Invalid HTTP request line: "\x03\x00\x00,'à\x00\x00\x00\x00\x00Cookie: mstshash=Domain"
+[2024-10-19 21:06:58 +0000] [307411] [WARNING] Invalid request from ip=81.19.135.47: Invalid HTTP request line: "\x03\x00\x00,'à\x00\x00\x00\x00\x00Cookie: mstshash=Domain"
+[2024-10-19 21:06:58 +0000] [213301] [WARNING] Invalid request from ip=81.19.135.47: Invalid HTTP request line: "\x03\x00\x00,'à\x00\x00\x00\x00\x00Cookie: mstshash=Domain"
+[2024-10-19 21:40:47 +0000] [136197] [CRITICAL] WORKER TIMEOUT (pid:338933)
+[2024-10-19 21:40:47 +0000] [338933] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-19 21:40:47 +0000] [338933] [INFO] Worker exiting (pid: 338933)
+[2024-10-19 21:40:49 +0000] [136197] [ERROR] Worker (pid:338933) was sent SIGKILL! Perhaps out of memory?
+[2024-10-19 21:40:49 +0000] [377353] [INFO] Booting worker with pid: 377353

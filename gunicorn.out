@@ -1,0 +1,385 @@
+MongoDB is running.
+MongoDB is running.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 74}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 74}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 67}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 73}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 76}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+MongoDB is running.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 74}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 83}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+MongoDB is running.
+MongoDB is running.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': False, 'mes': 'The face was not detected, please try again!'}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+MongoDB is running.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+MongoDB is running.
+MongoDB is running.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 85}
+MongoDB is running.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 73}
+MongoDB is running.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 72}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 76}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 83}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+MongoDB is running.
+MongoDB is running.
+{'status': False, 'mes': 'More than one face detected, please try again!'}
+MongoDB is running.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 77}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 77}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+MongoDB is running.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 84}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 71}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 77}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 71}
+{'status': False, 'mes': 'More than one face detected, please try again!'}
+MongoDB is running.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 84}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 83}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+No known encodings found. Encoding new face. UID: USER20240111232257064
+{'status': True, 'mes': 'The faces matched', 'accuracy': 64}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': False, 'mes': 'The face was not detected, please try again!'}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': False, 'mes': 'More than one face detected, please try again!'}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 74}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 67}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 75}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 77}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 75}
+{'status': False, 'mes': 'More than one face detected, please try again!'}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 74}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 87}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 76}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 72}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 73}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 87}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 77}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+MongoDB is running.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 77}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 83}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 73}
+{'status': False, 'mes': 'The face was not detected, please try again!'}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 72}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 76}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 83}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 73}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 84}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 74}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 68}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': False, 'mes': 'The face was not detected, please try again!'}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 75}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 75}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 84}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 77}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 77}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 84}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 75}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+MongoDB is running.
+MongoDB is running.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 75}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': False, 'mes': 'The face was not detected, please try again!'}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 72}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 73}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 84}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 83}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 69}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 83}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 88}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 84}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 75}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 73}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': False, 'mes': 'More than one face detected, please try again!'}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 77}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 70}
+{'status': False, 'mes': 'The face was not detected, please try again!'}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 83}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 76}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+MongoDB is running.
+MongoDB is running.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': False, 'mes': 'The face was not detected, please try again!'}
+{'status': False, 'mes': 'More than one face detected, please try again!'}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 84}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 77}
+{'status': False, 'mes': 'The face was not detected, please try again!'}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 83}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': False, 'mes': 'The face was not detected, please try again!'}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 76}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 77}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': False, 'mes': 'The face was not detected, please try again!'}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 84}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 75}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 77}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': False, 'mes': 'The face was not detected, please try again!'}
+{'status': False, 'mes': 'The face was not detected, please try again!'}
+{'status': False, 'mes': 'The face was not detected, please try again!'}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 76}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 77}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 73}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 85}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 76}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 89}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 77}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 83}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 76}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+MongoDB is running.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 77}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+MongoDB is running.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 85}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 85}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 86}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+No known encodings found. Encoding new face. UID: USER20240212105658567
+{'status': True, 'mes': 'The faces matched', 'accuracy': 56}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 75}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 77}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 83}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 84}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 84}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 85}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 74}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 75}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': False, 'mes': 'The face was not detected, please try again!'}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 83}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 83}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 84}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 85}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 83}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 83}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+MongoDB is running.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 84}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 72}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 71}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 77}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 83}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 77}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 85}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+MongoDB is running.
+MongoDB is running.
+MongoDB is running.
+MongoDB is running.
+MongoDB is running.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 76}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 68}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 85}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 79}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 77}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+MongoDB is running.
+{'status': True, 'mes': 'The faces matched', 'accuracy': 83}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 82}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 78}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 83}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 74}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 80}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 75}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 84}
+{'status': True, 'mes': 'The faces matched', 'accuracy': 81}
