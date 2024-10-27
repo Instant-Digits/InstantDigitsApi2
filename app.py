@@ -71,12 +71,16 @@ def queryDocs():
     return jsonify(dbOperations.queryADocs(request.json)),200
 
 
+
 @app.route('/IntelliGoldSpecialTasks', methods=['POST'])
 def intelliGoldTasks():
     if not mangoIsOn:
         return jsonify({'status':False, 'mes':'Database is NOT reachable.' }),404
-    return jsonify(IntelliGold.taskDivider(request.json, dbOperations=dbOperations)),200
 
+    out=IntelliGold.taskDivider(request.json, dbOperations=dbOperations)
+    if 'file' in out and out['status']:
+        return send_file(out['file'])
+    return jsonify(out), 200
 
 
 if __name__ == '__main__':
