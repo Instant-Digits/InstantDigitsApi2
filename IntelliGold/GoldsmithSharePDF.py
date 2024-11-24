@@ -137,29 +137,46 @@ def GoldSmithSharePDF(data):
                      align='right',fontColor=blue)
     # Iterate through itemList
     index=0
+    data['track'] = data['track'] if 'track' in data else False
     for item_id, item in data["itemList"].items():
         # Download image
-        imagePath = download_image(item["image"]["url"])
-        (imagePath, imWidth, imHeight)=resize_and_save_image(imagePath, imagePath,target_height=int((height-pageHeader*3-lspace)/2) )
-        image = ImageReader(imagePath)
-        index+=1
-        can.setFont("Helvetica-Bold", 13)
-        titleStr= f"{index}. {item['label']} | {item['weight']}g | Karad :{item['karad']} | Size :{item['size']} | {item['note']}"
+
+        isImageAvailable = 'image' in item and item["image"] and  "url" in item["image"]
         
-        titleStr += item['T2']['detail']['note'] if 'T2'in item and 'detail' in item['T2'] and 'note' in item['T2']['detail'] else ''
+        index+=1
+        can.setFont("Helvetica", 13)
+        titleStr= f"{index}. {item['label']} | {item['weight']}g | Karad :{item['karad']} | Size :{item['size']}"
+        titleStr += f" | {item['note']}" if 'note' in item else ''
+        
+        titleStr +=(' | '+data['track'][-1]['detail']['note']) if  data['track'] else ''
+       
+
+        titleStr += (' | '+item['T2']['detail']['note']) if not data['track'] and 'T2'in item and 'detail' in item['T2'] and 'note' in item['T2']['detail'] else ''
+        
+        titleStr += '' if isImageAvailable else ' | No Image!'
+        
+        lspace=18
         lHeight=VCenteredBoxText(can, tx, l, paperWidth,lspace,titleStr,
                          fillColor=white,fontColor=black, fillHeight=lspace, heightOnly=True )  
-       
+
         l-=lHeight
         VCenteredBoxText(can, tx, l, paperWidth,lspace,titleStr,
                           fillColor=white,fontColor=black, fillHeight=lHeight )
-        l-=lspace/2
-        # Draw the image
-        l-=imHeight
-        tx=(paperWidth-imWidth)/2   
-        can.drawImage(image, tx, l, width=imWidth, height=imHeight)
+        
+
+        if isImageAvailable:
+            # l-=lspace/3
+            imagePath = download_image(item["image"]["url"])
+            (imagePath, imWidth, imHeight)=resize_and_save_image(imagePath, imagePath,target_height=int((height-pageHeader*3-lspace)/2) )
+            image = ImageReader(imagePath)        
+            # Draw the image
+            l-=imHeight
+            tx=(paperWidth-imWidth)/2   
+            can.drawImage(image, tx, l, width=imWidth, height=imHeight)
+        else :
+            imHeight=50
         tx=txStart
-        l-=lspace
+        l-=lspace/2
         if (l<imHeight and index <= (len(data["itemList"])-1)):
             can.showPage()
             l=height-pageHeader            
@@ -179,31 +196,77 @@ def GoldSmithSharePDF(data):
 # Generate the PDF
 if __name__ == "__main__":  
     data = {
-            "balance": 668,
-            "comment": "Fgbvvg",
-            "date": "2024-11-17",
-            "invoiceSN": "Vg",
-            "isAvailableCredit": False,
-            "issuedUID": "MP-02-2022-01-04-GOLDTEST100",
-            "issuedby": "GOLDTEST100",
-            "itemList": {
-                "2024@11@17@01@49@36@555": {
-                    "id": "2024@11@17@01@49@36@555",
-                    "image": {
-                        "dirWithoutFirmID": "Order/2024-11-17 01:49:58_698.jpeg",
-                        "url": "https://firebasestorage.googleapis.com/v0/b/aidrevs-test.appspot.com/o/MP-GOLD-2021-11-02%2FOrder%2F2024-11-17%2001%3A49%3A58_698.jpeg?alt=media&token=71839feb-f35d-48d7-ad63-143a8775bac3"
-                    },
-                    "karad": "22",
-                    "label": "Gggg, Gggg Gggg, Gggg Gggg, Gggg Gggg, Gggg Gggg, Gggg Gggg, Gggg",
-                    "note": "Qdf",
-                    "quantity": 1,
-                    "size": "Wff",
-                    "unit": "g",
-                    "unitPrice": "1234",
-                    "weight": "1266.000"
-                },
-            },
-            "name": "Rav",
-        }  
+  "balance": -3695,
+  "comment": "Good",
+  "date": "2024-11-23",
+  "invoiceSN": "987654",
+  "isAvailableCredit": False,
+  "issuedUID": "MP-02-2022-01-04-GOLDTEST100",
+  "issuedby": "GOLDTEST100",
+  "itemList": {
+    "2024@11@23@11@45@02@127": {
+      "id": "2024@11@23@11@45@02@127",
+      "image": {
+        "dirWithoutFirmID": "Order/2024-11-23 11:49:58_741.jpeg",
+        "url": "https://firebasestorage.googleapis.com/v0/b/aidrevs-test.appspot.com/o/MP-GOLD-2021-11-02%2FOrder%2F2024-11-23%2011%3A49%3A58_741.jpeg?alt=media&token=432cc81d-cacf-4f55-8a82-7e5aa0e95c72"
+      },
+      "karad": "12",
+      "label": "Kodi",
+      "quantity": 1,
+      "size": "46",
+      "unit": "g",
+      "unitPrice": "85",
+      "weight": "28.000"
+    },
+    "2024@11@23@11@50@20@568": {
+      "id": "2024@11@23@11@50@20@568",
+      "image": {
+        "dirWithoutFirmID": "Order/2024-11-23 11:50:43_154.jpeg",
+        "url": "https://firebasestorage.googleapis.com/v0/b/aidrevs-test.appspot.com/o/MP-GOLD-2021-11-02%2FOrder%2F2024-11-23%2011%3A50%3A43_154.jpeg?alt=media&token=bca55788-a543-4add-a272-60e36cb7bd1b"
+      },
+      "karad": "25",
+      "label": "Kodi",
+      "quantity": 1,
+      "size": "Shs",
+      "unit": "g",
+      "unitPrice": "454",
+      "weight": "123.000"
+    }
+  },
+  "itemNames": "Kodi,Kodi",
+  "linkStamps": "",
+  "name": "GOOD NAME",
+  "nameAddress": "",
+  "nameEmail": "",
+  "nameID": "",
+  "namePhone": "",
+  "nameRef": "",
+  "payAmount": 4234,
+  "payMethods": [{ "type": "OrderPay", "label": "Order Pay", "amount": 4234 }],
+  "purchase": False,
+  "stockValueReduction": 0,
+  "tax": 89.83,
+  "taxHide": False,
+  "taxPercentage": -20,
+  "time": "11:51:06 am",
+  "timeStamp": "2024-11-23 11:51:06_162",
+  "total": 449.17,
+  "txDate": "2024-11-30",
+  "type": "Order_Processing",
+  "track": [
+    {
+      "task": "Shared with GoldSmit",
+      "timeStamp": "2024-11-23 11:51:39_763",
+      "taskID": "T2",
+      "isItemViseTask": True,
+      "modal": "GoldSmithModal",
+      "button": "Share with GoldSmit",
+      "by": "GOLDTEST100",
+      "detail": { "note": "Delivery Date : 2024-11-26, Fggg", "name": "Ggg" }
+    }
+  ],
+  "jobtype": "goldSmithReport"
+}
+  
     print(GoldSmithSharePDF(data))
 

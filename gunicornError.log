@@ -17794,3 +17794,80 @@ SystemExit: 1
 [2024-11-22 00:45:40 +0000] [1182] [INFO] Booting worker with pid: 1182
 [2024-11-22 00:45:40 +0000] [1184] [INFO] Booting worker with pid: 1184
 [2024-11-22 00:45:40 +0000] [1183] [INFO] Booting worker with pid: 1183
+[2024-11-22 11:53:58 +0000] [1184] [WARNING] Invalid request from ip=199.45.154.137: Invalid HTTP Version: (2, 0)
+[2024-11-22 17:38:08 +0000] [1154] [INFO] Starting gunicorn 23.0.0
+[2024-11-22 17:38:08 +0000] [1154] [INFO] Listening at: http://0.0.0.0:5000 (1154)
+[2024-11-22 17:38:08 +0000] [1154] [INFO] Using worker: sync
+[2024-11-22 17:38:08 +0000] [1157] [INFO] Booting worker with pid: 1157
+[2024-11-22 17:38:08 +0000] [1162] [INFO] Booting worker with pid: 1162
+[2024-11-22 17:38:08 +0000] [1163] [INFO] Booting worker with pid: 1163
+[2024-11-22 17:38:08 +0000] [1164] [INFO] Booting worker with pid: 1164
+[2024-11-22 18:45:22 +0000] [1154] [CRITICAL] WORKER TIMEOUT (pid:1164)
+[2024-11-22 18:45:22 +0000] [1164] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-11-22 18:45:22 +0000] [1164] [INFO] Worker exiting (pid: 1164)
+[2024-11-22 18:45:23 +0000] [1154] [ERROR] Worker (pid:1164) was sent SIGKILL! Perhaps out of memory?
+[2024-11-22 18:45:23 +0000] [1854] [INFO] Booting worker with pid: 1854
+[2024-11-22 21:30:11 +0000] [1854] [WARNING] Invalid request from ip=45.130.145.69: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2024-11-23 04:59:03 +0000] [1154] [CRITICAL] WORKER TIMEOUT (pid:1162)
+[2024-11-23 04:59:03 +0000] [1162] [ERROR] Error handling request /FaceCompareBase64
+Traceback (most recent call last):
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/InstantDigitsApi2/app.py", line 25, in faceCompareBase64
+    data=request.get_json()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 605, in get_json
+    data = self.get_data(cache=cache)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 419, in get_data
+    rv = self.stream.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/body.py", line 221, in read
+    data = self.reader.read(1024)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/body.py", line 131, in read
+    data = self.unreader.read()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/InstantDigitsApi2/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-11-23 04:59:03 +0000] [1162] [INFO] Worker exiting (pid: 1162)
+[2024-11-23 04:59:04 +0000] [1154] [ERROR] Worker (pid:1162) was sent SIGKILL! Perhaps out of memory?
+[2024-11-23 04:59:05 +0000] [6101] [INFO] Booting worker with pid: 6101
+[2024-11-23 14:28:06 +0000] [1157] [WARNING] Invalid request from ip=206.168.34.192: Invalid HTTP Version: (2, 0)
+[2024-11-24 00:48:13 +0000] [1151] [INFO] Starting gunicorn 23.0.0
+[2024-11-24 00:48:13 +0000] [1151] [INFO] Listening at: http://0.0.0.0:5000 (1151)
+[2024-11-24 00:48:13 +0000] [1151] [INFO] Using worker: sync
+[2024-11-24 00:48:13 +0000] [1154] [INFO] Booting worker with pid: 1154
+[2024-11-24 00:48:13 +0000] [1159] [INFO] Booting worker with pid: 1159
+[2024-11-24 00:48:13 +0000] [1160] [INFO] Booting worker with pid: 1160
+[2024-11-24 00:48:13 +0000] [1164] [INFO] Booting worker with pid: 1164
