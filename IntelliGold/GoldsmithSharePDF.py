@@ -12,6 +12,18 @@ from PIL import Image
 
 if not os.path.exists('outputs'):
     os.makedirs('outputs')
+
+def formatCurrencyNew(amount):
+    if isinstance(amount, str):
+        try:
+            amount = float(amount)
+        except ValueError:
+            raise ValueError("Invalid input: amount must be a number or a string representing a number.")
+    amount=round(amount, 2)
+    if not isinstance(amount, (float, int)):
+        raise TypeError("Invalid input type: amount must be a float, int, or string representing a number.")
+    return "{:,.2f}".format(amount)
+
 def VCenteredBoxText(can, x, y, width, height, string, padding=3, align='left', 
                      heightOnly=False, fillColor=False, fillHeight=False, fontColor=black):
 
@@ -193,11 +205,123 @@ def GoldSmithSharePDF(data):
     can.save()
     return {'status':True,'file':pdf_file}
 
+def OrderPDFExport(data):
+    """Generates a PDF with each item's image and description."""
+    pdf_file= os.path.join('outputs','OrderPDFExport.pdf')
+    can = canvas.Canvas(pdf_file, pagesize=letter)
+    width, height = letter
+
+    pageHeader=40
+    footerHeight=pageHeader    
+    
+    l=height-pageHeader/2
+    txStart=20
+    paperWidth=width-txStart*2
+
+    tx=txStart
+    lspace=15
+    data['firmName']=data['firmName'] if 'firmName' in data else 'Saghana Jewels'
+    
+    
+    #gold smith task
+    taskDate = data['track'][len(data['track'])-1]['timeStamp'].split(' ')[0] if  'track' in data and len(data['track'])>0 else data['date']
+    can.setFont("Helvetica-Bold", 13)  
+    l-=lspace  
+    VCenteredBoxText(can, tx,l, paperWidth,lspace,data['firmName'].upper()+' ORDER NOTE', align='center',fontColor=maroon)
+    can.setFont("Helvetica", 12)  
+
+    l-=lspace*1.2
+    VCenteredBoxText(can, tx,l, paperWidth/3,lspace,'Order No. : '+data['invoiceSN'], align='left',fontColor=maroon)
+
+    tx+=paperWidth/3
+    VCenteredBoxText(can, tx,l, paperWidth/3,lspace,'Order Date : '+data['date'], align='left',fontColor=maroon)
+
+    tx+=paperWidth/3
+    VCenteredBoxText(can, tx,l, paperWidth/3,lspace,'Created By : '+data['issuedby'].title(), align='left',fontColor=maroon)
+
+    l-=lspace  
+    tx=txStart
+    VCenteredBoxText(can, tx,l, paperWidth/3,lspace,'Name : '+data['name'].title(), align='left',fontColor=maroon)
+
+    tx+=paperWidth/3
+    VCenteredBoxText(can, tx,l, paperWidth/3,lspace,'Delivery : '+data['txDate'], align='left',fontColor=maroon)
+
+    tx+=paperWidth/3
+    VCenteredBoxText(can, tx,l, paperWidth/3,lspace,'Total : '+formatCurrencyNew(data['total']+data['tax']), align='left',fontColor=maroon)
+
+    
+    if 'comment' in data and len(data['comment'])>0  :
+        l-=lspace  
+        tx=txStart
+        VCenteredBoxText(can, tx,l, paperWidth/3,lspace,data['comment'], align='left',fontColor=maroon)
+
+    tx=txStart
+    can.setFont("Helvetica-Bold", 8)
+    VCenteredBoxText(can, tx,lspace, paperWidth,lspace, 'www.instantdigits.com', 
+                     align='right',fontColor=blue)
+    # Iterate through itemList
+    index=0
+    l-=lspace*0.5
+    for item_id, item in data["itemList"].items():
+        # Download image
+
+        isImageAvailable = 'image' in item and item["image"] and  "url" in item["image"]
+        
+        index+=1
+        can.setFont("Helvetica", 13)
+        titleStr= f"{index}. {item['label']} | {item['weight']}g | Karad :{item['karad']} | Size :{item['size']}"
+        titleStr += f" | Price: {formatCurrencyNew(item['unitPrice'])}"
+        
+
+        titleStr += f" | {item['note']}" if 'note' in item else ''
+       
+        titleStr += '' if isImageAvailable else ' | No Image!'
+        
+        lspace=18
+        lHeight=VCenteredBoxText(can, tx, l, paperWidth,lspace,titleStr,
+                         fillColor=white,fontColor=black, fillHeight=lspace, heightOnly=True )  
+
+        l-=lHeight
+        VCenteredBoxText(can, tx, l, paperWidth,lspace,titleStr,
+                          fillColor=white,fontColor=black, fillHeight=lHeight )
+        
+
+        if isImageAvailable:
+            # l-=lspace/3
+            imagePath = download_image(item["image"]["url"])
+            (imagePath, imWidth, imHeight)=resize_and_save_image(imagePath, imagePath,target_height=int((height-pageHeader*3-lspace)/2.2) )
+            image = ImageReader(imagePath)        
+            # Draw the image
+            l-=imHeight
+            tx=(paperWidth-imWidth)/2   
+            can.drawImage(image, tx, l, width=imWidth, height=imHeight)
+        else :
+            imHeight=50
+        tx=txStart
+        l-=lspace/2
+        if (l<imHeight and index <= (len(data["itemList"])-1)):
+            can.showPage()
+            l=height-pageHeader            
+            tx=txStart
+            lspace=15
+            can.setFont("Helvetica-Bold", 13)    
+            VCenteredBoxText(can, tx,height- lspace*2, paperWidth,lspace,'Continued Page of Order No. : '+data['invoiceSN'], 
+                            align='center',fontColor=maroon)
+            can.setFont("Helvetica-Bold", 8)
+            VCenteredBoxText(can, tx,lspace, paperWidth,lspace, 'www.instantdigits.com', 
+                            align='right',fontColor=blue)
+        
+    
+    can.save()
+    return {'status':True,'file':pdf_file}
+
+
+
 # Generate the PDF
 if __name__ == "__main__":  
     data = {
   "balance": -3695,
-  "comment": "Good",
+#   "comment": "Good",
   "date": "2024-11-23",
   "invoiceSN": "987654",
   "isAvailableCredit": False,
@@ -219,6 +343,20 @@ if __name__ == "__main__":
       "weight": "28.000"
     },
     "2024@11@23@11@50@20@568": {
+      "id": "2024@11@23@11@50@20@568",
+      "image": {
+        "dirWithoutFirmID": "Order/2024-11-23 11:50:43_154.jpeg",
+        "url": "https://firebasestorage.googleapis.com/v0/b/aidrevs-test.appspot.com/o/MP-GOLD-2021-11-02%2FOrder%2F2024-11-23%2011%3A50%3A43_154.jpeg?alt=media&token=bca55788-a543-4add-a272-60e36cb7bd1b"
+      },
+      "karad": "25",
+      "label": "Kodi",
+      "quantity": 1,
+      "size": "Shs",
+      "unit": "g",
+      "unitPrice": "454",
+      "weight": "123.000"
+    },
+    "2024@12321@23@11@50@20@568": {
       "id": "2024@11@23@11@50@20@568",
       "image": {
         "dirWithoutFirmID": "Order/2024-11-23 11:50:43_154.jpeg",
@@ -268,5 +406,5 @@ if __name__ == "__main__":
   "jobtype": "goldSmithReport"
 }
   
-    print(GoldSmithSharePDF(data))
+    print(OrderPDFExport(data))
 
