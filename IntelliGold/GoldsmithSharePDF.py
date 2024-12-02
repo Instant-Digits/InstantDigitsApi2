@@ -157,7 +157,9 @@ def GoldSmithSharePDF(data):
         
         index+=1
         can.setFont("Helvetica", 13)
-        titleStr= f"{index}. {item['label']} | {item['weight']}g | Karad :{item['karad']} | Size :{item['size']}"
+        titleStr= f"{index}. {item['label']} | {item['weight']}g | Karad :{item['karad']}"
+        titleStr += f" | Size :{item['size']}" if 'size' in item and item['size']  else ''
+
         titleStr += f" | {item['note']}" if 'note' in item else ''
         
         titleStr +=(' | '+data['track'][-1]['detail']['note']) if  data['track'] else ''
@@ -269,7 +271,8 @@ def OrderPDFExport(data):
         
         index+=1
         can.setFont("Helvetica", 13)
-        titleStr= f"{index}. {item['label']} | {item['weight']}g | Karad :{item['karad']} | Size :{item['size']}"
+        titleStr= f"{index}. {item['label']} | {item['weight']}g | Karad :{item['karad']}"
+        titleStr += f" | Size :{item['size']}" if 'size' in item and item['size']  else ''
         titleStr += f" | Price: {formatCurrencyNew(item['unitPrice'])}"
         
 
@@ -365,7 +368,6 @@ if __name__ == "__main__":
       "karad": "25",
       "label": "Kodi",
       "quantity": 1,
-      "size": "Shs",
       "unit": "g",
       "unitPrice": "454",
       "weight": "123.000"
@@ -406,5 +408,5 @@ if __name__ == "__main__":
   "jobtype": "goldSmithReport"
 }
   
-    print(OrderPDFExport(data))
+    print(GoldSmithSharePDF(data))
 
