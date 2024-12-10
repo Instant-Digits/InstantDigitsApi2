@@ -127,12 +127,11 @@ def GoldSmithSharePDF(data):
     can = canvas.Canvas(pdf_file, pagesize=letter)
     width, height = letter
 
-    pageHeader=40
-    footerHeight=pageHeader    
+    pageHeader=60
     
     l=height-pageHeader
-    txStart=20
-    paperWidth=width-txStart*2
+    txStart=35
+    paperWidth=width-txStart-20
 
     tx=txStart
     lspace=15
@@ -141,8 +140,8 @@ def GoldSmithSharePDF(data):
     
     #gold smith task
     taskDate = data['track'][len(data['track'])-1]['timeStamp'].split(' ')[0] if  'track' in data and len(data['track'])>0 else data['date']
-    can.setFont("Helvetica-Bold", 13)    
-    VCenteredBoxText(can, tx,height- lspace*2, paperWidth,lspace,data['firmName'].upper()+'  Order No. : '+data['invoiceSN'] +'  Shared on : '+taskDate, 
+    can.setFont("Helvetica-Bold", 15)    
+    VCenteredBoxText(can, tx,height- lspace*3, paperWidth,lspace,data['firmName'].title()+'  Order No. : '+data['invoiceSN'] +'  Shared on : '+taskDate, 
                             align='center',fontColor=maroon)
     can.setFont("Helvetica-Bold", 8)
     VCenteredBoxText(can, tx,lspace, paperWidth,lspace, 'www.instantdigits.com', 
@@ -150,54 +149,90 @@ def GoldSmithSharePDF(data):
     # Iterate through itemList
     index=0
     data['track'] = data['track'] if 'track' in data else False
-    for item_id, item in data["itemList"].items():
-        # Download image
-
-        isImageAvailable = 'image' in item and item["image"] and  "url" in item["image"]
-        
+    for  item in data["itemList"].values():
         index+=1
-        can.setFont("Helvetica", 13)
-        titleStr= f"{index}. {item['label']} | {item['weight']}g | Karad :{item['karad']}"
-        titleStr += f" | Size :{item['size']}" if 'size' in item and item['size']  else ''
-
-        titleStr += f" | {item['note']}" if 'note' in item else ''
-        
-        titleStr +=(' | '+data['track'][-1]['detail']['note']) if  data['track'] else ''
-       
-
-        titleStr += (' | '+item['T2']['detail']['note']) if not data['track'] and 'T2'in item and 'detail' in item['T2'] and 'note' in item['T2']['detail'] else ''
-        
-        titleStr += '' if isImageAvailable else ' | No Image!'
-        
-        lspace=18
-        lHeight=VCenteredBoxText(can, tx, l, paperWidth,lspace,titleStr,
-                         fillColor=white,fontColor=black, fillHeight=lspace, heightOnly=True )  
-
-        l-=lHeight
-        VCenteredBoxText(can, tx, l, paperWidth,lspace,titleStr,
-                          fillColor=white,fontColor=black, fillHeight=lHeight )
-        
-
+        isImageAvailable = 'image' in item and item["image"] and  "url" in item["image"]
         if isImageAvailable:
             # l-=lspace/3
-            imagePath = download_image(item["image"]["url"])
-            (imagePath, imWidth, imHeight)=resize_and_save_image(imagePath, imagePath,target_height=int((height-pageHeader*3-lspace)/2) )
+            imagePath =download_image(item["image"]["url"])
+            (imagePath, imWidth, imHeight)=resize_and_save_image(imagePath, imagePath,target_height=280 )
             image = ImageReader(imagePath)        
             # Draw the image
+            
             l-=imHeight
-            tx=(paperWidth-imWidth)/2   
+            tx=txStart   
             can.drawImage(image, tx, l, width=imWidth, height=imHeight)
+            tx+=imWidth
+            l+=imHeight
+
         else :
-            imHeight=50
-        tx=txStart
+            (imWidth, imHeight)=( 207,280)
+            l-=imHeight
+            tx=txStart
+            can.setFont("Helvetica-Bold", 12)
+            VCenteredBoxText(can, tx, l, imWidth,lspace,'NO IMAGE',align='center',
+                         fillColor=lightgrey,fontColor=black, fillHeight=imHeight )
+            tx+=imWidth
+            l+=imHeight
+        lstart=l
+        lspace=17
+        tx+=20
+        txWidth=70        
+        l-=lspace*1.5
+        can.setFont("Helvetica-Bold", 13)
+        VCenteredBoxText(can, tx, l, paperWidth,lspace,str(index)+'. '+item['label'].upper(),fontColor=black )
+
+        can.setFont("Helvetica", 13)
+        l-=lspace
+        VCenteredBoxText(can, tx, l, paperWidth,lspace,'Order No.' ,fontColor=black )
+        VCenteredBoxText(can, tx+txWidth, l, paperWidth,lspace,': ' +data['invoiceSN'],fontColor=black )
+
+        l-=lspace
+        VCenteredBoxText(can, tx, l, paperWidth,lspace,'Weight' ,fontColor=black )
+        VCenteredBoxText(can, tx+txWidth, l, paperWidth,lspace,': ' +item['weight']+'g',fontColor=black )
+
+        l-=lspace
+        VCenteredBoxText(can, tx, l, paperWidth,lspace,'Carat' ,fontColor=black )
+        VCenteredBoxText(can, tx+txWidth, l, paperWidth,lspace,': ' +item['karad'],fontColor=black )
+
+        if 'size' in item and item['size']:
+            l-=lspace
+            VCenteredBoxText(can, tx, l, paperWidth,lspace,'Size' ,fontColor=black )
+            VCenteredBoxText(can, tx+txWidth, l, paperWidth,lspace,': ' +item['size'],fontColor=black )
+        
+        if 'note' in item :
+            lHeight=VCenteredBoxText(can, tx, l, paperWidth-tx,lspace,'Note'+': ' +item['note'] ,fontColor=black , heightOnly=True)
+            l-=lHeight
+            VCenteredBoxText(can, tx, l, paperWidth-tx,lspace,'Note'+': ' +item['note'] ,fontColor=black )
+
+        lspace=15
+        titleStr=''
+        #doubt
+        titleStr +=(data['track'][-1]['detail']['note']) if  data['track'] else ''
+       
+
+        titleStr += (item['T2']['detail']['note']) if not data['track'] and 'T2'in item and 'detail' in item['T2'] and 'note' in item['T2']['detail'] else ''
+
+        if(len(titleStr)>0):
+            lHeight=VCenteredBoxText(can, tx, l, paperWidth-tx,lspace,titleStr,
+                         fillColor=white,fontColor=black, fillHeight=lspace, heightOnly=True )  
+            l-=lHeight
+            VCenteredBoxText(can, tx, l,  paperWidth-tx,lspace,titleStr,
+                            fillColor=white,fontColor=black, fillHeight=lHeight )
+
         l-=lspace/2
+        if (lstart-imHeight)<l: 
+            l=lstart-imHeight
+            l-=lspace*4
+        tx=txStart
+        
         if (l<imHeight and index <= (len(data["itemList"])-1)):
             can.showPage()
             l=height-pageHeader            
             tx=txStart
             lspace=15
             can.setFont("Helvetica-Bold", 13)    
-            VCenteredBoxText(can, tx,height- lspace*2, paperWidth,lspace,data['firmName'].upper()+'  Order No. : '+data['invoiceSN'] +'  Shared on : '+taskDate, 
+            VCenteredBoxText(can, tx,height- lspace*3, paperWidth,lspace,data['firmName'].title()+'  Order No. : '+data['invoiceSN'] +'  Shared on : '+taskDate, 
                             align='center',fontColor=maroon)
             can.setFont("Helvetica-Bold", 8)
             VCenteredBoxText(can, tx,lspace, paperWidth,lspace, 'www.instantdigits.com', 
@@ -213,12 +248,11 @@ def OrderPDFExport(data):
     can = canvas.Canvas(pdf_file, pagesize=letter)
     width, height = letter
 
-    pageHeader=40
-    footerHeight=pageHeader    
+    pageHeader=60
     
     l=height-pageHeader/2
-    txStart=20
-    paperWidth=width-txStart*2
+    txStart=40
+    paperWidth=width-txStart-20
 
     tx=txStart
     lspace=15
@@ -226,8 +260,8 @@ def OrderPDFExport(data):
     
     
     #gold smith task
-    taskDate = data['track'][len(data['track'])-1]['timeStamp'].split(' ')[0] if  'track' in data and len(data['track'])>0 else data['date']
-    can.setFont("Helvetica-Bold", 13)  
+    
+    can.setFont("Helvetica-Bold", 14)  
     l-=lspace  
     VCenteredBoxText(can, tx,l, paperWidth,lspace,data['firmName'].upper()+' ORDER NOTE', align='center',fontColor=maroon)
     can.setFont("Helvetica", 12)  
@@ -264,44 +298,78 @@ def OrderPDFExport(data):
     # Iterate through itemList
     index=0
     l-=lspace*0.5
-    for item_id, item in data["itemList"].items():
+    for item in data["itemList"].values():
         # Download image
-
-        isImageAvailable = 'image' in item and item["image"] and  "url" in item["image"]
-        
+        l-=lspace
         index+=1
-        can.setFont("Helvetica", 13)
-        titleStr= f"{index}. {item['label']} | {item['weight']}g | Karad :{item['karad']}"
-        titleStr += f" | Size :{item['size']}" if 'size' in item and item['size']  else ''
-        titleStr += f" | Price: {formatCurrencyNew(item['unitPrice'])}"
-        
-
-        titleStr += f" | {item['note']}" if 'note' in item else ''
-       
-        titleStr += '' if isImageAvailable else ' | No Image!'
-        
-        lspace=18
-        lHeight=VCenteredBoxText(can, tx, l, paperWidth,lspace,titleStr,
-                         fillColor=white,fontColor=black, fillHeight=lspace, heightOnly=True )  
-
-        l-=lHeight
-        VCenteredBoxText(can, tx, l, paperWidth,lspace,titleStr,
-                          fillColor=white,fontColor=black, fillHeight=lHeight )
-        
-
+        isImageAvailable = 'image' in item and item["image"] and  "url" in item["image"]
         if isImageAvailable:
             # l-=lspace/3
             imagePath = download_image(item["image"]["url"])
-            (imagePath, imWidth, imHeight)=resize_and_save_image(imagePath, imagePath,target_height=int((height-pageHeader*3-lspace)/2.2) )
+            (imagePath, imWidth, imHeight)=resize_and_save_image(imagePath, imagePath,target_height=280 )
             image = ImageReader(imagePath)        
             # Draw the image
+            
             l-=imHeight
-            tx=(paperWidth-imWidth)/2   
+            tx=txStart   
             can.drawImage(image, tx, l, width=imWidth, height=imHeight)
+            tx+=imWidth
+            l+=imHeight
+
         else :
-            imHeight=50
-        tx=txStart
+            (imWidth, imHeight)=( 207,280)
+            l-=imHeight
+            tx=txStart
+            can.setFont("Helvetica-Bold", 12)
+            VCenteredBoxText(can, tx, l, imWidth,lspace,'NO IMAGE',align='center',
+                         fillColor=lightgrey,fontColor=black, fillHeight=imHeight )
+            tx+=imWidth
+            l+=imHeight
+        lstart=l
+        lspace=17
+        tx+=20
+        txWidth=70        
+        l-=lspace*1.5
+        can.setFont("Helvetica-Bold", 13)
+        VCenteredBoxText(can, tx, l, paperWidth,lspace,str(index)+'. '+item['label'].upper(),fontColor=black )
+
+        can.setFont("Helvetica", 13)
+        l-=lspace
+        VCenteredBoxText(can, tx, l, paperWidth,lspace,'Order No.' ,fontColor=black )
+        VCenteredBoxText(can, tx+txWidth, l, paperWidth,lspace,': ' +data['invoiceSN'],fontColor=black )
+
+        l-=lspace
+        VCenteredBoxText(can, tx, l, paperWidth,lspace,'Weight' ,fontColor=black )
+        VCenteredBoxText(can, tx+txWidth, l, paperWidth,lspace,': ' +item['weight']+'g',fontColor=black )
+
+        l-=lspace
+        VCenteredBoxText(can, tx, l, paperWidth,lspace,'Carat' ,fontColor=black )
+        VCenteredBoxText(can, tx+txWidth, l, paperWidth,lspace,': ' +item['karad'],fontColor=black )
+
+        l-=lspace
+        VCenteredBoxText(can, tx, l, paperWidth,lspace,'Price' ,fontColor=black )
+        VCenteredBoxText(can, tx+txWidth, l, paperWidth,lspace,': ' +formatCurrencyNew(item['unitPrice']),fontColor=black )
+
+        if 'size' in item and item['size']:
+            l-=lspace
+            VCenteredBoxText(can, tx, l, paperWidth,lspace,'Size' ,fontColor=black )
+            VCenteredBoxText(can, tx+txWidth, l, paperWidth,lspace,': ' +item['size'],fontColor=black )
+        
+        if 'note' in item :
+            lHeight=VCenteredBoxText(can, tx, l, paperWidth-tx,lspace,'Note'+': ' +item['note'] ,fontColor=black , heightOnly=True)
+            l-=lHeight
+            VCenteredBoxText(can, tx, l, paperWidth-tx,lspace,'Note'+': ' +item['note'] ,fontColor=black )
+
+        lspace=15
+        
+
         l-=lspace/2
+        if (lstart-imHeight)<l: 
+            l=lstart-imHeight
+            l-=lspace*3
+        tx=txStart
+
+
         if (l<imHeight and index <= (len(data["itemList"])-1)):
             can.showPage()
             l=height-pageHeader            
@@ -408,5 +476,5 @@ if __name__ == "__main__":
   "jobtype": "goldSmithReport"
 }
   
-    print(GoldSmithSharePDF(data))
+    print(OrderPDFExport(data))
 
