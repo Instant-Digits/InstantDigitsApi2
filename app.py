@@ -7,7 +7,7 @@ from MangoDB import dbOperations
 from pyngrok import ngrok
 from IntelliGold import Main as IntelliGold
 from Shinol.QRgenerate import GenerateShinolQRPDF
-
+from FileUploaders.github import handleUploadRequest
 
 app = Flask(__name__)
 CORS(app, support_credentials=True)
@@ -81,6 +81,17 @@ def intelliGoldTasks():
     if 'file' in out and out['status']:
         return send_file(out['file'])
     return jsonify(out), 200
+
+@app.route("/uploadFiles", methods=["POST"])
+def uploadFiles():
+    try:
+        if "file" not in request.files:
+            return jsonify({"status": False, "mes": "No file part", "out": {}}), 400
+        file = request.files["file"]
+        return handleUploadRequest(file)
+    except Exception as e:
+        return jsonify({"status": False, "mes": str(e), "out": {}}), 500
+
 
 
 if __name__ == '__main__':
