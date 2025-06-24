@@ -8,16 +8,23 @@ from pyngrok import ngrok
 from IntelliGold import Main as IntelliGold
 from Shinol.QRgenerate import GenerateShinolQRPDF
 from FileUploaders.github import handleUploadRequest
+import os
 
 app = Flask(__name__)
-CORS(app, support_credentials=True)
-
+#CORS(app, support_credentials=True)
+CORS(app)
+app.config['MAX_CONTENT_LENGTH'] = 1000 * 1024 * 1024
 mangoIsOn=dbOperations.checkMongoConnection()
+
+#local file upload
+BASE_FOLDER = os.path.join(os.getcwd(), 'public')
+os.makedirs(BASE_FOLDER, exist_ok=True)
+
 
 @app.route("/")
 @cross_origin(supports_credentials=True)
 def hello_world():
-    return jsonify({'status':True,'apis':'v4.2.1'})
+    return jsonify({'status':True,'apis':'v4.3.1'})
 
 
 @app.route('/FaceCompareBase64', methods=['POST'])
@@ -93,6 +100,21 @@ def uploadFiles():
         return jsonify({"status": False, "mes": str(e), "out": {}}), 500
 
 
+@app.route('/uploadFileLocal', methods=['POST'])
+def uploadFile():
+    file = request.files.get('file')
+    if not file or not file.filename:
+        return jsonify({'error': 'No file uploaded or empty filename'}), 400
+
+    folder = request.form.get('folder', '').strip()
+    targetFolder = os.path.join(BASE_FOLDER, folder) if folder else BASE_FOLDER
+    os.makedirs(targetFolder, exist_ok=True)
+
+    savePath = os.path.join(targetFolder, file.filename)
+    file.save(savePath)
+
+    publicPath = f'/public/{folder}/{file.filename}' if folder else f'/public/{file.filename}'
+    return jsonify({'status': True, 'mes': 'File uploaded successfully', 'out': publicPath})
 
 if __name__ == '__main__':
     # ngrok.set_auth_token("2lAQy2D3FFFsk2Iq2nQV1WXTF0w_mHNMU9M8h8qw1LzL2JrV")
