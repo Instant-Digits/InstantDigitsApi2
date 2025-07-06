@@ -9,14 +9,15 @@ source venv/bin/activate
 # Kill any existing ngrok processes
 pkill ngrok 
 
-# Kill any existing gunicorn processes
-#pkill gunicorn
+# Kill any existing uvicorn processes
+pkill -f "uvicorn main:app"
 
 # Run the ngrok setup script in the background ngrok not using now
 #python ngrokStart.py &
 
 # Start Gunicorn with nohup to keep running after logout
-nohup gunicorn -w 4 -b 127.0.0.1:5000 --timeout 30 --access-logfile gunicorn.log --error-logfile gunicornError.log app:app > gunicorn.out 2>&1 &
+nohup uvicorn main:app --host 0.0.0.0 --port 5000 --log-level info > uvicorn.log 2>&1 &
+
 
 # Print the process IDs for debugging
 echo "ngrok PID: $!"

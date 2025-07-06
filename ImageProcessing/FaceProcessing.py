@@ -5,14 +5,6 @@ import base64
 import io
 from PIL import Image
 import os
-import logging
-
-logging.basicConfig(
-    filename='ImageProcessing.log',  # Log file
-    level=logging.ERROR,  # Minimum level of severity to log
-    format='%(asctime)s - %(levelname)s - %(message)s'  # Log format
-)
-logger = logging.getLogger()
 
 def NoofFaces(image_path):
     image = cv2.imread(image_path)
@@ -63,7 +55,6 @@ def AnomalyDetections(faceLocation, imgFile): #mobile phone photo dection
 def compareFaces(knownImagePath, unknownImagePath, uid,  threshold=48):
     knownEncodings = []
     if len(knownEncodings) == 0:
-        logging.error('No known encodings found. Encoding new face. uid ' + uid)
         try:
             knownImage = face_recognition.load_image_file(knownImagePath)
             knownImageEncodings = face_recognition.face_encodings(knownImage)
@@ -75,7 +66,6 @@ def compareFaces(knownImagePath, unknownImagePath, uid,  threshold=48):
            
             
         except Exception as e:
-            logging.error(f"Error Code FP#1: {e} for {uid}")
             return {'status':False, 'mes':'Error Code FP#1' }
 
     try:
@@ -103,7 +93,6 @@ def compareFaces(knownImagePath, unknownImagePath, uid,  threshold=48):
         return {'status':False, 'mes':'The Faces miss-matched' }
 
     except Exception as e:
-        logging.error(f"Error Code FP#1: {e} for {uid}")
         return {'status':False, 'mes':'Thats an Error FP#1, Pls try Again!' }
     
 
@@ -121,7 +110,6 @@ def decodeBase64Image(base64_string):
         # Convert bytes data to a PIL Image
         return io.BytesIO(image_data)
     except Exception as e:
-        logging.error(f"Error decoding base64 image: {e}")
         raise
 
 def decodeBase64ImageResize(base64_string, max_size=(800, 800) ):
@@ -138,7 +126,6 @@ def decodeBase64ImageResize(base64_string, max_size=(800, 800) ):
         
         return image_bytes
     except Exception as e:
-        logging.error(f"Error decoding and resizing base64 image: {e}")
         raise
 
 
@@ -199,7 +186,6 @@ def compareFacesBase64(knownImageBase64, unknownImageBase64, uid, dbOperations=F
         return {'status': False, 'mes': 'The faces did not match'}
 
     except Exception as e:
-        logging.error(f"Error Code FP#1: {e} for {uid}")
         return {'status': False, 'mes': 'That\'s an error FP#1, please try again!'}
 
 

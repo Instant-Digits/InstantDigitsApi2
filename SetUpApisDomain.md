@@ -1,58 +1,34 @@
-# Setting Up `insdigits.today` with Vultr, Nginx, and SSL
-
-## Step 1: Update DNS Settings
-
-You need to point your domain (`insdigits.today`) to your Vultr server's IP address (`216.155.157.204`).
-
-### Steps:
-
-1. Log in to your **Dynadot** account.
-2. Go to the **Domain Management** section.
-3. Find your domain (`insdigits.today`) and click **Manage**.
-4. Navigate to the **DNS Settings** or **Nameservers** section.
-5. Add an **A record**:
-   - **Host**: `@` (or leave it blank for the root domain)
-   - **Value**: `216.155.157.204` (your Vultr server's IP)
-   - **TTL**: Leave as default (e.g., 3600 seconds)
-6. Save the changes.
-
-### Optional: Add a Subdomain
-
-If you want to use a subdomain (e.g., `api.insdigits.today`), add another **A record**:
-
-- **Host**: `api`
-- **Value**: `216.155.157.204`
-- **TTL**: Leave as default.
+# Setting Up `apis.instantdigits.com` and `files.instantdigits.com` with Vultr, Nginx, and SSL
 
 ---
 
-## Step 2: Set Up Nginx as a Reverse Proxy
+## Step 1: Update DNS Settings
 
-Nginx will act as a reverse proxy to route traffic from `insdigits.today` to your Flask app running on port 5000.
+Log in to your DNS provider (e.g., Dynadot) and create A records pointing to your server IP (`216.155.157.204`):
 
-### Steps:
+| Subdomain               | Type | Value (Your Server IP) |
+| ----------------------- | ---- | ---------------------- |
+| apis.instantdigits.com  | A    | 216.155.157.204        |
+| files.instantdigits.com | A    | 216.155.157.204        |
 
-#### Install Nginx:
+---
+
+## Step 2: Set Up Nginx for `apis.instantdigits.com`
+
+This will reverse proxy requests to your FastAPI app running on port 5000.
+
+### Create Nginx Configuration:
 
 ```bash
-sudo apt update
-sudo apt install nginx
+sudo nano /etc/nginx/sites-available/apis.instantdigits.com
 ```
 
-#### Configure Nginx:
-
-Create a new configuration file for your domain:
-
-```bash
-sudo nano /etc/nginx/sites-available/insdigits.today
-```
-
-Add the following configuration:
+Paste:
 
 ```nginx
 server {
     listen 80;
-    server_name insdigits.today;
+    server_name apis.instantdigits.com;
 
     location / {
         proxy_pass http://127.0.0.1:5000;
@@ -60,33 +36,114 @@ server {
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
+
+        proxy_buffering off;
+        proxy_cache off;
+        chunked_transfer_encoding on;
+
+        proxy_connect_timeout 60s;
+        proxy_send_timeout 600s;
+        proxy_read_timeout 600s;
+        send_timeout 600s;
     }
 }
 ```
 
-Save and exit (Ctrl + O, then Ctrl + X).
-
-#### Enable the Configuration:
+Enable the configuration:
 
 ```bash
-sudo ln -s /etc/nginx/sites-available/insdigits.today /etc/nginx/sites-enabled/
-```
-
-#### Test and Restart Nginx:
-
-```bash
-sudo nginx -t
-sudo systemctl restart nginx
+sudo ln -s /etc/nginx/sites-available/apis.instantdigits.com /etc/nginx/sites-enabled/
 ```
 
 ---
 
-## Step 3: Check Firewall Settings
+## Step 3: Set Up Nginx for `files.instantdigits.com`
 
-Ensure that ports 80 (HTTP) and 443 (HTTPS) are open:
+This will serve static files located at `/home/ubuntu/InstantDigitsApi2/public`.
+
+### Create symbolic link for Nginx:
 
 ```bash
-sudo ufw status
+sudo rm -rf /var/www/files
+sudo ln -s /home/ubuntu/InstantDigitsApi2/public /var/www/files
+```
+
+### Create Nginx Configuration:
+
+```bash
+sudo nano /etc/nginx/sites-available/files.instantdigits.com
+```
+
+Paste:
+
+```nginx
+server {
+    listen 80;
+    server_name files.instantdigits.com;
+
+    root /var/www/files;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+```
+
+Enable the configuration:
+
+```bash
+sudo ln -s /etc/nginx/sites-available/files.instantdigits.com /etc/nginx/sites-enabled/
+```
+
+---
+
+## Step 4: Test and Reload Nginx
+
+```bash
+sudo nginx -t
+sudo systemctl reload nginx
+```
+
+---
+
+## Step 5: Install SSL Certificates with Certbot
+
+Make sure Certbot is installed:
+
+```bash
+sudo apt install certbot python3-certbot-nginx
+```
+
+Obtain and configure SSL certificates:
+
+```bash
+sudo certbot --nginx -d apis.instantdigits.com
+sudo certbot --nginx -d files.instantdigits.com
+```
+
+---
+
+## Step 6: Verify Setup
+
+- Visit `https://apis.instantdigits.com` → FastAPI app should respond.
+- Visit `https://files.instantdigits.com/yourfile.ext` → Static file should be served.
+
+---
+
+## Step 7: Test Auto-Renewal of SSL Certificates
+
+```bash
+sudo certbot renew --dry-run
+```
+
+---
+
+## Step 8: Firewall Settings (if applicable)
+
+Ensure HTTP and HTTPS ports are open:
+
+```bash
 sudo ufw allow 80/tcp
 sudo ufw allow 443/tcp
 sudo ufw reload
@@ -94,140 +151,4 @@ sudo ufw reload
 
 ---
 
-## Step 4: Set Up HTTPS with Let's Encrypt
-
-To secure your domain with HTTPS, use Let's Encrypt.
-
-### Steps:
-
-#### Install Certbot:
-
-```bash
-sudo apt install certbot python3-certbot-nginx
-```
-
-#### Obtain an SSL Certificate:
-
-```bash
-sudo certbot --nginx -d insdigits.today
-```
-
-Run a dry-run to test certificate renewal:
-
-```bash
-sudo certbot renew --dry-run
-```
-
-Check the status of Nginx:
-
-```bash
-sudo systemctl status nginx
-```
-
-Restart Nginx:
-
-```bash
-sudo systemctl restart nginx
-```
-
-Follow the prompts to complete the process.
-
-#### Verify HTTPS:
-
-Visit `https://insdigits.today` in your browser.
-
----
-
-## Step 5: Update Flask App Configuration
-
-Ensure your Flask app is running on `127.0.0.1:5000` so that Nginx can forward requests to it.
-
-### Example Flask App:
-
-```python
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return "Hello, World!"
-
-if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=5000)
-```
-
-### Run your Flask app:
-
-```bash
-python app.py
-```
-
-Test with `curl`:
-
-```bash
-curl http://127.0.0.1:5000
-```
-
----
-
-## Step 6: Test the Setup
-
-Visit `https://insdigits.today` in your browser. You should see the response from your Flask app (e.g., "Hello, World!").
-
----
-
-## Step 7: Optional - Set Up a Subdomain
-
-If you want to use a subdomain (e.g., `api.insdigits.today`), follow these steps:
-
-### Add a DNS A Record:
-
-In **Dynadot**, add an A record for the subdomain:
-
-- **Host**: `api`
-- **Value**: `216.155.157.204`
-- **TTL**: Default.
-
-### Update Nginx Configuration:
-
-Edit your Nginx configuration file:
-
-```bash
-sudo nano /etc/nginx/sites-available/insdigits.today
-```
-
-Add a new server block for the subdomain:
-
-```nginx
-server {
-    listen 80;
-    server_name api.insdigits.today;
-
-    location / {
-        proxy_pass http://127.0.0.1:5000;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-```
-
-Save and exit the file.
-
-#### Obtain an SSL Certificate for the Subdomain:
-
-```bash
-sudo certbot --nginx -d api.insdigits.today
-```
-
-#### Restart Nginx:
-
-```bash
-sudo systemctl restart nginx
-```
-
-#### Test the Subdomain:
-
-Visit `https://api.insdigits.today` in your browser.
+_End of Document_

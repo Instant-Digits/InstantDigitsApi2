@@ -1,10 +1,24 @@
-from flask import Flask
+import requests
 
-app = Flask(__name__)
+url = "http://localhost:8000/files/uploadFile"
+file_path = "req.txt"  # Path to your file
+folder = "testfolder"  # Specify your subfolder here
 
-@app.route('/')
-def home():
-    return "Hello, World!"
+with open(file_path, "rb") as f:
+    files = {"file": (file_path, f, "text/x-python")}
+    data = {"folder": folder}
+    response = requests.post(url, files=files, data=data)
 
-if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=5000)
+print("Upload response:", response.json())
+
+# Get the uploaded file's relative path for deletion
+def delete_uploaded_file(relative_path):
+    url = "http://localhost:8000/files/deleteAFile/"
+    payload = {"url": relative_path}
+    response = requests.post(url, json=payload)
+    return response.json()
+
+# Example usage:
+relative_path = f"{folder}/{file_path}"
+result = delete_uploaded_file(relative_path)
+print("Delete response:", result)
