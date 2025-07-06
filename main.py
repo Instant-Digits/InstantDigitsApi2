@@ -21,8 +21,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Set BASE_FOLDER to one directory up from current, named 'ApiPublic'
-BASE_FOLDER = os.path.abspath(os.path.join(os.getcwd(), '..', 'ApiPublic'))
+# Set BASE_FOLDER to one directory up from current, named 'PublicFiles'
+BASE_FOLDER = os.path.abspath(os.path.join(os.getcwd(), '..', 'PublicFiles'))
 os.makedirs(BASE_FOLDER, exist_ok=True)
 app.mount("/public", StaticFiles(directory=BASE_FOLDER), name="public")
 
@@ -89,7 +89,7 @@ async def intelli_gold_tasks(request: Request):
     return out
 
 
-@app.post("/files/uploadFile")
+@app.post("/files/uploadAFile")
 async def upload_file_local(
     file: UploadFile = File(...),
     folder: Optional[str] = Form("")

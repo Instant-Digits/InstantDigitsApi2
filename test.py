@@ -1,6 +1,6 @@
 import requests
 
-url = "http://localhost:8000/files/uploadFile"
+url = "http://localhost:8000/files/uploadAFile"
 file_path = "req.txt"  # Path to your file
 folder = "testfolder"  # Specify your subfolder here
 
