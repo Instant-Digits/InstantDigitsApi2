@@ -89,7 +89,7 @@ async def intelli_gold_tasks(request: Request):
     return out
 
 
-@app.post("/files/uploadAFile")
+@app.post("/files/uploadAFile/")
 async def upload_file_local(
     file: UploadFile = File(...),
     folder: Optional[str] = Form("")

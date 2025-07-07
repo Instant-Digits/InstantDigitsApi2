@@ -65,7 +65,7 @@ This will serve static files located at `/home/ubuntu/InstantDigitsApi2/public`.
 
 ```bash
 sudo rm -rf /var/www/files
-sudo ln -s /home/ubuntu/InstantDigitsApi2/public /var/www/files
+sudo ln -s /home/ubuntu/PublicFiles /var/www/files
 ```
 
 ### Create Nginx Configuration:
