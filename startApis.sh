@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Navigate to the project directory
-cd /root/InstantDigitsApi2
+cd /home/ubuntu/InstantDigitsApi3
 
 # Activate the virtual environment
 source venv/bin/activate
